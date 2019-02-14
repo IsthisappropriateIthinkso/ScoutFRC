@@ -16,5 +16,10 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
+        public void tbAttempts_1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
