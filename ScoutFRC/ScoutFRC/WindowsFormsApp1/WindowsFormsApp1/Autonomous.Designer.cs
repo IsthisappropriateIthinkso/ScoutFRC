@@ -37,7 +37,6 @@
             this.clBoxDidGetHatch_6 = new System.Windows.Forms.CheckedListBox();
             this.clBoxDidGetHatch_5 = new System.Windows.Forms.CheckedListBox();
             this.clBoxDidGetHatch_4 = new System.Windows.Forms.CheckedListBox();
-            this.BtnAttempted = new System.Windows.Forms.Button();
             this.cBoxHatchPanel_1 = new System.Windows.Forms.CheckBox();
             this.cBoxHatchPanel_2 = new System.Windows.Forms.CheckBox();
             this.cBoxHatchPanel_3 = new System.Windows.Forms.CheckBox();
@@ -45,6 +44,8 @@
             this.cBoxHatchPanel_5 = new System.Windows.Forms.CheckBox();
             this.cBoxHatchPanel_6 = new System.Windows.Forms.CheckBox();
             this.BtnNextScreenAutonomous = new System.Windows.Forms.Button();
+            this.cBoxHatchPanel_7 = new System.Windows.Forms.CheckBox();
+            this.cBoxHatchPanel_8 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // BtnDidTeam1GetOff
@@ -53,7 +54,7 @@
             this.BtnDidTeam1GetOff.Name = "BtnDidTeam1GetOff";
             this.BtnDidTeam1GetOff.Size = new System.Drawing.Size(123, 69);
             this.BtnDidTeam1GetOff.TabIndex = 0;
-            this.BtnDidTeam1GetOff.Text = "Did autonomous get off platform";
+            this.BtnDidTeam1GetOff.Text = "Autonomous 1 Got Off Platform";
             this.BtnDidTeam1GetOff.UseVisualStyleBackColor = true;
             // 
             // btnDidTeam2GetOff
@@ -62,7 +63,7 @@
             this.btnDidTeam2GetOff.Name = "btnDidTeam2GetOff";
             this.btnDidTeam2GetOff.Size = new System.Drawing.Size(123, 63);
             this.btnDidTeam2GetOff.TabIndex = 1;
-            this.btnDidTeam2GetOff.Text = "Did autonomous get off platform";
+            this.btnDidTeam2GetOff.Text = "Autonomous 2 Got Off Platform";
             this.btnDidTeam2GetOff.UseVisualStyleBackColor = true;
             // 
             // btnDidTeam3GetOff
@@ -71,7 +72,7 @@
             this.btnDidTeam3GetOff.Name = "btnDidTeam3GetOff";
             this.btnDidTeam3GetOff.Size = new System.Drawing.Size(123, 69);
             this.btnDidTeam3GetOff.TabIndex = 2;
-            this.btnDidTeam3GetOff.Text = "Did autonomous get off platform";
+            this.btnDidTeam3GetOff.Text = "Autonomous 3 Got Off Platform";
             this.btnDidTeam3GetOff.UseVisualStyleBackColor = true;
             // 
             // clBoxDidGetHatch_1
@@ -146,15 +147,6 @@
             this.clBoxDidGetHatch_4.Size = new System.Drawing.Size(93, 49);
             this.clBoxDidGetHatch_4.TabIndex = 6;
             // 
-            // BtnAttempted
-            // 
-            this.BtnAttempted.Location = new System.Drawing.Point(480, 278);
-            this.BtnAttempted.Name = "BtnAttempted";
-            this.BtnAttempted.Size = new System.Drawing.Size(75, 23);
-            this.BtnAttempted.TabIndex = 9;
-            this.BtnAttempted.Text = "button1";
-            this.BtnAttempted.UseVisualStyleBackColor = true;
-            // 
             // cBoxHatchPanel_1
             // 
             this.cBoxHatchPanel_1.AutoSize = true;
@@ -225,12 +217,34 @@
             this.BtnNextScreenAutonomous.UseVisualStyleBackColor = true;
             this.BtnNextScreenAutonomous.Click += new System.EventHandler(this.BtnNextScreenAutonomous_Click);
             // 
+            // cBoxHatchPanel_7
+            // 
+            this.cBoxHatchPanel_7.AutoSize = true;
+            this.cBoxHatchPanel_7.Location = new System.Drawing.Point(480, 278);
+            this.cBoxHatchPanel_7.Name = "cBoxHatchPanel_7";
+            this.cBoxHatchPanel_7.Size = new System.Drawing.Size(55, 17);
+            this.cBoxHatchPanel_7.TabIndex = 17;
+            this.cBoxHatchPanel_7.Text = "Hatch";
+            this.cBoxHatchPanel_7.UseVisualStyleBackColor = true;
+            // 
+            // cBoxHatchPanel_8
+            // 
+            this.cBoxHatchPanel_8.AutoSize = true;
+            this.cBoxHatchPanel_8.Location = new System.Drawing.Point(480, 302);
+            this.cBoxHatchPanel_8.Name = "cBoxHatchPanel_8";
+            this.cBoxHatchPanel_8.Size = new System.Drawing.Size(55, 17);
+            this.cBoxHatchPanel_8.TabIndex = 18;
+            this.cBoxHatchPanel_8.Text = "Hatch";
+            this.cBoxHatchPanel_8.UseVisualStyleBackColor = true;
+            // 
             // Autonomous
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.FRC_Field;
             this.ClientSize = new System.Drawing.Size(803, 606);
+            this.Controls.Add(this.cBoxHatchPanel_8);
+            this.Controls.Add(this.cBoxHatchPanel_7);
             this.Controls.Add(this.BtnNextScreenAutonomous);
             this.Controls.Add(this.cBoxHatchPanel_6);
             this.Controls.Add(this.cBoxHatchPanel_5);
@@ -238,7 +252,6 @@
             this.Controls.Add(this.cBoxHatchPanel_3);
             this.Controls.Add(this.cBoxHatchPanel_2);
             this.Controls.Add(this.cBoxHatchPanel_1);
-            this.Controls.Add(this.BtnAttempted);
             this.Controls.Add(this.clBoxDidGetHatch_6);
             this.Controls.Add(this.clBoxDidGetHatch_5);
             this.Controls.Add(this.clBoxDidGetHatch_4);
@@ -266,7 +279,6 @@
         private System.Windows.Forms.CheckedListBox clBoxDidGetHatch_6;
         private System.Windows.Forms.CheckedListBox clBoxDidGetHatch_5;
         private System.Windows.Forms.CheckedListBox clBoxDidGetHatch_4;
-        private System.Windows.Forms.Button BtnAttempted;
         private System.Windows.Forms.CheckBox cBoxHatchPanel_1;
         private System.Windows.Forms.CheckBox cBoxHatchPanel_2;
         private System.Windows.Forms.CheckBox cBoxHatchPanel_3;
@@ -274,5 +286,7 @@
         private System.Windows.Forms.CheckBox cBoxHatchPanel_5;
         private System.Windows.Forms.CheckBox cBoxHatchPanel_6;
         private System.Windows.Forms.Button BtnNextScreenAutonomous;
+        private System.Windows.Forms.CheckBox cBoxHatchPanel_7;
+        private System.Windows.Forms.CheckBox cBoxHatchPanel_8;
     }
 }

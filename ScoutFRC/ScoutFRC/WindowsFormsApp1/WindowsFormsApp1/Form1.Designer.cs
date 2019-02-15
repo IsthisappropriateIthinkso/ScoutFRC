@@ -36,13 +36,14 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.BtnContinue = new System.Windows.Forms.Button();
-            this.chkBox1AllianceID = new System.Windows.Forms.CheckBox();
-            this.chkBox2AllianceID = new System.Windows.Forms.CheckBox();
+            this.rBtn1AllianceID = new System.Windows.Forms.RadioButton();
+            this.rBtn2AllianceID = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // tbEvent
             // 
             this.tbEvent.Location = new System.Drawing.Point(122, 106);
+            this.tbEvent.Multiline = true;
             this.tbEvent.Name = "tbEvent";
             this.tbEvent.Size = new System.Drawing.Size(100, 20);
             this.tbEvent.TabIndex = 1;
@@ -50,6 +51,7 @@
             // tbMatchNum
             // 
             this.tbMatchNum.Location = new System.Drawing.Point(270, 107);
+            this.tbMatchNum.Multiline = true;
             this.tbMatchNum.Name = "tbMatchNum";
             this.tbMatchNum.Size = new System.Drawing.Size(100, 20);
             this.tbMatchNum.TabIndex = 2;
@@ -57,6 +59,7 @@
             // tbTeamNum
             // 
             this.tbTeamNum.Location = new System.Drawing.Point(440, 107);
+            this.tbTeamNum.Multiline = true;
             this.tbTeamNum.Name = "tbTeamNum";
             this.tbTeamNum.Size = new System.Drawing.Size(100, 20);
             this.tbTeamNum.TabIndex = 3;
@@ -99,7 +102,7 @@
             // 
             // BtnContinue
             // 
-            this.BtnContinue.Location = new System.Drawing.Point(657, 379);
+            this.BtnContinue.Location = new System.Drawing.Point(725, 402);
             this.BtnContinue.Name = "BtnContinue";
             this.BtnContinue.Size = new System.Drawing.Size(107, 38);
             this.BtnContinue.TabIndex = 10;
@@ -107,34 +110,35 @@
             this.BtnContinue.UseVisualStyleBackColor = true;
             this.BtnContinue.Click += new System.EventHandler(this.BtnContinue_Click);
             // 
-            // chkBox1AllianceID
+            // rBtn1AllianceID
             // 
-            this.chkBox1AllianceID.AutoSize = true;
-            this.chkBox1AllianceID.Location = new System.Drawing.Point(606, 106);
-            this.chkBox1AllianceID.Name = "chkBox1AllianceID";
-            this.chkBox1AllianceID.Size = new System.Drawing.Size(47, 17);
-            this.chkBox1AllianceID.TabIndex = 11;
-            this.chkBox1AllianceID.Text = "Blue";
-            this.chkBox1AllianceID.UseVisualStyleBackColor = true;
-            this.chkBox1AllianceID.CheckedChanged += new System.EventHandler(this.chkBox1AllianceID_CheckedChanged);
+            this.rBtn1AllianceID.AutoSize = true;
+            this.rBtn1AllianceID.Location = new System.Drawing.Point(617, 109);
+            this.rBtn1AllianceID.Name = "rBtn1AllianceID";
+            this.rBtn1AllianceID.Size = new System.Drawing.Size(46, 17);
+            this.rBtn1AllianceID.TabIndex = 11;
+            this.rBtn1AllianceID.TabStop = true;
+            this.rBtn1AllianceID.Text = "Blue";
+            this.rBtn1AllianceID.UseVisualStyleBackColor = true;
             // 
-            // chkBox2AllianceID
+            // rBtn2AllianceID
             // 
-            this.chkBox2AllianceID.AutoSize = true;
-            this.chkBox2AllianceID.Location = new System.Drawing.Point(606, 129);
-            this.chkBox2AllianceID.Name = "chkBox2AllianceID";
-            this.chkBox2AllianceID.Size = new System.Drawing.Size(46, 17);
-            this.chkBox2AllianceID.TabIndex = 12;
-            this.chkBox2AllianceID.Text = "Red";
-            this.chkBox2AllianceID.UseVisualStyleBackColor = true;
+            this.rBtn2AllianceID.AutoSize = true;
+            this.rBtn2AllianceID.Location = new System.Drawing.Point(617, 132);
+            this.rBtn2AllianceID.Name = "rBtn2AllianceID";
+            this.rBtn2AllianceID.Size = new System.Drawing.Size(45, 17);
+            this.rBtn2AllianceID.TabIndex = 12;
+            this.rBtn2AllianceID.TabStop = true;
+            this.rBtn2AllianceID.Text = "Red";
+            this.rBtn2AllianceID.UseVisualStyleBackColor = true;
             // 
             // frmRecordLog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(925, 584);
-            this.Controls.Add(this.chkBox2AllianceID);
-            this.Controls.Add(this.chkBox1AllianceID);
+            this.Controls.Add(this.rBtn2AllianceID);
+            this.Controls.Add(this.rBtn1AllianceID);
             this.Controls.Add(this.BtnContinue);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -159,8 +163,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button BtnContinue;
-        private System.Windows.Forms.CheckBox chkBox1AllianceID;
-        private System.Windows.Forms.CheckBox chkBox2AllianceID;
+        private System.Windows.Forms.RadioButton rBtn1AllianceID;
+        private System.Windows.Forms.RadioButton rBtn2AllianceID;
     }
 }
 

@@ -21,7 +21,7 @@ namespace WindowsFormsApp1
         {
             frmRecordLog form1 = new frmRecordLog();
             this.Close();
-            form1.Show();
+            form1.Visible=true;
         }
     }
 }
