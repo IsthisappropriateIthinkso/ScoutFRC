@@ -15,13 +15,31 @@ namespace WindowsFormsApp1
         public DriverControlled()
         {
             InitializeComponent();
+            int sideALow = 0;
+            int sideAMed = 0;
+            int sideAHigh = 0;
+
+            int sideBLow = 0;
+            int sideBMed = 0;
+            int sideBHigh = 0;
+
+            int sideCLow = 0;
+            int sideCMed = 0;
+            int sideCHigh = 0;
+
+            int sideALow2 = 0;
+            int sideAMed2 = 0;
+            int sideAHigh2 = 0;
+
+            int sideBLow2 = 0;
+            int sideBMed2 = 0;
+            int sideBHigh2 = 0;
+
+            int sideCLow2 = 0;
+            int sideCMed2 = 0;
+            int sideCHigh2 = 0;
         }
 
-        private void BtnNextScreenDriverStation_Click(object sender, EventArgs e)
-        {
-            EndGame form4 = new EndGame();
-            this.Close();
-            form4.Show();
-        }
+        
     }
 }

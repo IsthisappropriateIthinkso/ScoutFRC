@@ -120,6 +120,7 @@
             this.rBtn1AllianceID.TabStop = true;
             this.rBtn1AllianceID.Text = "Blue";
             this.rBtn1AllianceID.UseVisualStyleBackColor = true;
+            this.rBtn1AllianceID.CheckedChanged += new System.EventHandler(this.rBtn1AllianceID_CheckedChanged);
             // 
             // rBtn2AllianceID
             // 
@@ -131,6 +132,7 @@
             this.rBtn2AllianceID.TabStop = true;
             this.rBtn2AllianceID.Text = "Red";
             this.rBtn2AllianceID.UseVisualStyleBackColor = true;
+            this.rBtn2AllianceID.CheckedChanged += new System.EventHandler(this.rBtn2AllianceID_CheckedChanged);
             // 
             // frmRecordLog
             // 

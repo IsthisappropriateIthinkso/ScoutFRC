@@ -23,5 +23,25 @@ namespace WindowsFormsApp1
             this.Close();
             form5.Show();
         }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cBoxDidGetBackOnPlatform_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cBoxDidGetBackOnPlatform.Checked = true) {
+                radioButton1.Visible = true;
+                radioButton2.Visible = true;
+                radioButton3.Visible = true;
+            }
+            else
+            {
+                radioButton1.Visible = false;
+                radioButton2.Visible = false;
+                radioButton3.Visible = false;
+            }
+        }
     }
 }
