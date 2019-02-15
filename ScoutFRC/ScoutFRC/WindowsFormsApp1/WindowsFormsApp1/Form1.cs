@@ -21,12 +21,15 @@ namespace WindowsFormsApp1
         {
             Autonomous form2 = new Autonomous();
             form2.Show();
-
+            this.Visible = false;
         }
 
         private void chkBox1AllianceID_CheckedChanged(object sender, EventArgs e)
         {
-
+            if(rBtn1AllianceID.Checked==true)
+            {
+                
+            }
         }
     }
 }
