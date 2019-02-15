@@ -83,6 +83,7 @@
             this.tbAttempts_1.Name = "tbAttempts_1";
             this.tbAttempts_1.Size = new System.Drawing.Size(37, 20);
             this.tbAttempts_1.TabIndex = 3;
+            this.tbAttempts_1.TextChanged += new System.EventHandler(this.tbAttempts_1_TextChanged);
             // 
             // tbDelivered_1
             // 

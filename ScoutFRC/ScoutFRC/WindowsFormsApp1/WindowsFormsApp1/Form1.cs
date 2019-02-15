@@ -31,5 +31,15 @@ namespace WindowsFormsApp1
                 
             }
         }
+
+        private void rBtn1AllianceID_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rBtn2AllianceID_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
