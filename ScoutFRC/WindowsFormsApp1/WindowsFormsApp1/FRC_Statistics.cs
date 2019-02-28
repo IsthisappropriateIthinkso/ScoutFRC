@@ -10,18 +10,18 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class DriverControlled : Form
+    public partial class FRC_Statistics : Form
     {
-        public DriverControlled()
+        public FRC_Statistics()
         {
             InitializeComponent();
         }
 
-        private void BtnNextScreenDriverStation_Click(object sender, EventArgs e)
+        private void BtnNextMatch_Click(object sender, EventArgs e)
         {
-            EndGame form4 = new EndGame();
+            frmRecordLog form1 = new frmRecordLog();
             this.Close();
-            form4.Show();
+            form1.Visible=true;
         }
     }
 }

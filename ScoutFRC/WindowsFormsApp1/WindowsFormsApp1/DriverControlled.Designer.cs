@@ -42,6 +42,11 @@
             this.rBtnHigh_2 = new System.Windows.Forms.RadioButton();
             this.rBtnMedium_2 = new System.Windows.Forms.RadioButton();
             this.rBtnLow_2 = new System.Windows.Forms.RadioButton();
+            this.BtnHatchDelivered = new System.Windows.Forms.Button();
+            this.BtnHatchAttempted = new System.Windows.Forms.Button();
+            this.tbHatchDelivered = new System.Windows.Forms.TextBox();
+            this.tbHatchAttempted = new System.Windows.Forms.TextBox();
+            this.BtnNextScreenDriverStation = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // rBtnLow
@@ -83,7 +88,6 @@
             this.tbAttempts_1.Name = "tbAttempts_1";
             this.tbAttempts_1.Size = new System.Drawing.Size(37, 20);
             this.tbAttempts_1.TabIndex = 3;
-            this.tbAttempts_1.TextChanged += new System.EventHandler(this.tbAttempts_1_TextChanged);
             // 
             // tbDelivered_1
             // 
@@ -175,12 +179,59 @@
             this.rBtnLow_2.Text = "Low";
             this.rBtnLow_2.UseVisualStyleBackColor = true;
             // 
+            // BtnHatchDelivered
+            // 
+            this.BtnHatchDelivered.Location = new System.Drawing.Point(460, 287);
+            this.BtnHatchDelivered.Name = "BtnHatchDelivered";
+            this.BtnHatchDelivered.Size = new System.Drawing.Size(75, 33);
+            this.BtnHatchDelivered.TabIndex = 29;
+            this.BtnHatchDelivered.Text = "Delivered";
+            this.BtnHatchDelivered.UseVisualStyleBackColor = true;
+            // 
+            // BtnHatchAttempted
+            // 
+            this.BtnHatchAttempted.Location = new System.Drawing.Point(360, 288);
+            this.BtnHatchAttempted.Name = "BtnHatchAttempted";
+            this.BtnHatchAttempted.Size = new System.Drawing.Size(75, 33);
+            this.BtnHatchAttempted.TabIndex = 28;
+            this.BtnHatchAttempted.Text = "Attempted";
+            this.BtnHatchAttempted.UseVisualStyleBackColor = true;
+            // 
+            // tbHatchDelivered
+            // 
+            this.tbHatchDelivered.Location = new System.Drawing.Point(483, 326);
+            this.tbHatchDelivered.Name = "tbHatchDelivered";
+            this.tbHatchDelivered.Size = new System.Drawing.Size(37, 20);
+            this.tbHatchDelivered.TabIndex = 27;
+            // 
+            // tbHatchAttempted
+            // 
+            this.tbHatchAttempted.Location = new System.Drawing.Point(383, 327);
+            this.tbHatchAttempted.Name = "tbHatchAttempted";
+            this.tbHatchAttempted.Size = new System.Drawing.Size(37, 20);
+            this.tbHatchAttempted.TabIndex = 26;
+            // 
+            // BtnNextScreenDriverStation
+            // 
+            this.BtnNextScreenDriverStation.Location = new System.Drawing.Point(713, 485);
+            this.BtnNextScreenDriverStation.Name = "BtnNextScreenDriverStation";
+            this.BtnNextScreenDriverStation.Size = new System.Drawing.Size(75, 31);
+            this.BtnNextScreenDriverStation.TabIndex = 30;
+            this.BtnNextScreenDriverStation.Text = "Next Screen";
+            this.BtnNextScreenDriverStation.UseVisualStyleBackColor = true;
+            this.BtnNextScreenDriverStation.Click += new System.EventHandler(this.BtnNextScreenDriverStation_Click);
+            // 
             // DriverControlled
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.FRC_Field;
             this.ClientSize = new System.Drawing.Size(800, 618);
+            this.Controls.Add(this.BtnNextScreenDriverStation);
+            this.Controls.Add(this.BtnHatchDelivered);
+            this.Controls.Add(this.BtnHatchAttempted);
+            this.Controls.Add(this.tbHatchDelivered);
+            this.Controls.Add(this.tbHatchAttempted);
             this.Controls.Add(this.BtnDelivered_2);
             this.Controls.Add(this.BtnAttempted_2);
             this.Controls.Add(this.tbDelivered_2);
@@ -218,5 +269,10 @@
         private System.Windows.Forms.RadioButton rBtnHigh_2;
         private System.Windows.Forms.RadioButton rBtnMedium_2;
         private System.Windows.Forms.RadioButton rBtnLow_2;
+        private System.Windows.Forms.Button BtnHatchDelivered;
+        private System.Windows.Forms.Button BtnHatchAttempted;
+        private System.Windows.Forms.TextBox tbHatchDelivered;
+        private System.Windows.Forms.TextBox tbHatchAttempted;
+        private System.Windows.Forms.Button BtnNextScreenDriverStation;
     }
 }

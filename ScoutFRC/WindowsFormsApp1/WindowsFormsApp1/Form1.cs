@@ -10,11 +10,26 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class Form1 : Form
+    public partial class frmRecordLog : Form
     {
-        public Form1()
+        public frmRecordLog()
         {
             InitializeComponent();
+        }
+
+        private void BtnContinue_Click(object sender, EventArgs e)
+        {
+            Autonomous form2 = new Autonomous();
+            form2.Show();
+            this.Visible = false;
+        }
+
+        private void chkBox1AllianceID_CheckedChanged(object sender, EventArgs e)
+        {
+            if(rBtn1AllianceID.Checked==true)
+            {
+                
+            }
         }
     }
 }
