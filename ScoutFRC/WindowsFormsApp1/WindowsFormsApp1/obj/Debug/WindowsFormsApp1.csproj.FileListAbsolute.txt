@@ -26,3 +26,4 @@ C:\Users\Adam Gibson\Desktop\cSharpChapter 3\ScoutFRC\WindowsFormsApp1\WindowsFo
 C:\Users\Adam Gibson\Desktop\cSharpChapter 3\ScoutFRC\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 C:\Users\Adam Gibson\Desktop\cSharpChapter 3\ScoutFRC\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\Adam Gibson\Desktop\cSharpChapter 3\ScoutFRC\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Adam Gibson\Desktop\cSharpChapter 3\ScoutFRC\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Preload.resources
