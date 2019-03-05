@@ -17,9 +17,11 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        public void tbAttempts_1_TextChanged(object sender, EventArgs e)
+        private void BtnNextScreenDriverStation_Click(object sender, EventArgs e)
         {
-
+            EndGame form4 = new EndGame();
+            this.Close();
+            form4.Show();
         }
     }
 }
