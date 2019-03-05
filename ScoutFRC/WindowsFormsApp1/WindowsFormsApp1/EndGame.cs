@@ -10,18 +10,18 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class frmRecordLog : Form
+    public partial class EndGame : Form
     {
-        public frmRecordLog()
+        public EndGame()
         {
             InitializeComponent();
         }
 
-        private void BtnContinue_Click(object sender, EventArgs e)
+        private void BtnNextScreen_Click(object sender, EventArgs e)
         {
-            Preload form2 = new Preload();
-            form2.Show();
-            this.Visible = false;
+            FRC_Statistics form5 = new FRC_Statistics();
+            this.Close();
+            form5.Show();
         }
     }
 }
