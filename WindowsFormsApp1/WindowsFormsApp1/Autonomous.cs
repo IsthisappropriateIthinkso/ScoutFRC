@@ -23,7 +23,7 @@ namespace WindowsFormsApp1
 
         private void BtnNextScreenAutonomous_Click(object sender, EventArgs e)
         {
-            DriverControlled form3 = new DriverControlled();
+            gb form3 = new gb();
             this.Close();
             form3.Show();
         }
