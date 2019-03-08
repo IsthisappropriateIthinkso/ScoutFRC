@@ -75,6 +75,12 @@
     <Compile Include="FRC_Statistics.Designer.cs">
       <DependentUpon>FRC_Statistics.cs</DependentUpon>
     </Compile>
+    <Compile Include="Preload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preload.Designer.cs">
+      <DependentUpon>Preload.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Autonomous.resx">
@@ -91,6 +97,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FRC_Statistics.resx">
       <DependentUpon>FRC_Statistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preload.resx">
+      <DependentUpon>Preload.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

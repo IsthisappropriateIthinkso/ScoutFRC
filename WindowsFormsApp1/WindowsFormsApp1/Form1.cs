@@ -19,17 +19,9 @@ namespace WindowsFormsApp1
 
         private void BtnContinue_Click(object sender, EventArgs e)
         {
-            Autonomous form2 = new Autonomous();
+            Preload form2 = new Preload();
             form2.Show();
             this.Visible = false;
-        }
-
-        private void chkBox1AllianceID_CheckedChanged(object sender, EventArgs e)
-        {
-            if(rBtn1AllianceID.Checked==true)
-            {
-                
-            }
         }
     }
 }
