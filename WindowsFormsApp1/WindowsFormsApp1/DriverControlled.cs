@@ -12,44 +12,56 @@ namespace WindowsFormsApp1
 {
     public partial class gb : Form
     {
-        // All ints below are for the misses
-        int sideALow = 0;
-        int sideAMed = 0;
-        int sideAHigh = 0;
-        int sideBLow = 0;
-        int sideBMed = 0;
-        int sideBHigh = 0;
-        int cargoHigh = 0;
-        int cargoMed = 0;
-        int cargoLow = 0;
-
-        int sideALow2 = 0;
-        int sideAMed2 = 0;
-        int sideAHigh2 = 0;
-        int sideBLow2 = 0;
-        int sideBMed2 = 0;
-        int sideBHigh2 = 0;
-        int cargoHigh2 = 0;
-        int cargoMed2 = 0;
-        int cargoLow2 = 0;
-
-        // Below are for successful
-        Boolean sideALowS = false;
-        Boolean sideAMedS = false;
-        Boolean sideAHighS = false;
-        Boolean sideBLowS = false;
-        Boolean sideBMedS = false;
-        Boolean sideBHighS = false;
-        int cargoHighS = 0;
-        int cargoMedS = 0;
-        int cargoLowS = 0;
-
-
-
+       
         public gb()
         {
             InitializeComponent();
           
+        }
+        // values Driver Controlled
+        public class valuesDC
+        {
+            // All ints below are for the misses
+            public static int sideALow = 0;
+            public static int sideAMed = 0;
+            public static int sideAHigh = 0;
+            public static int sideBLow = 0;
+            public static int sideBMed = 0;
+            public static int sideBHigh = 0;
+            public static int cargoHigh = 0;
+            public static int cargoMed = 0;
+            public static int cargoLow = 0;
+
+            public static int sideALow2 = 0;
+            public static int sideAMed2 = 0;
+            public static int sideAHigh2 = 0;
+            public static int sideBLow2 = 0;
+            public static int sideBMed2 = 0;
+            public static int sideBHigh2 = 0;
+            public static int cargoHigh2 = 0;
+            public static int cargoMed2 = 0;
+            public static int cargoLow2 = 0;
+
+            // Below are for successful
+            public static Boolean sideALowS = false;
+            public static Boolean sideAMedS = false;
+            public static Boolean sideAHighS = false;
+            public static Boolean sideBLowS = false;
+            public static Boolean sideBMedS = false;
+            public static Boolean sideBHighS = false;
+            public static int cargoHighS = 0;
+            public static int cargoMedS = 0;
+            public static int cargoLowS = 0;
+
+            public static Boolean sideALowS2 = false;
+            public static Boolean sideAMedS2 = false;
+            public static Boolean sideAHighS2 = false;
+            public static Boolean sideBLowS2 = false;
+            public static Boolean sideBMedS2 = false;
+            public static Boolean sideBHighS2 = false;
+            public static int cargoHighS2 = 0;
+            public static int cargoMedS2 = 0;
+            public static int cargoLowS2 = 0;
         }
 
         private void DriverControlled_Load(object sender, EventArgs e)
@@ -61,23 +73,22 @@ namespace WindowsFormsApp1
         {
                 if (rBtnLow.Checked == true)
                 {
-                    lblAttempted.Text = "" + sideALow;
-                    sideALow = sideALow + 1;
+                    lblAttempted.Text = "" + valuesDC.sideALow;
+                valuesDC.sideALow = valuesDC.sideALow + 1;
                 }
                 else if (rBtnMedium.Checked == true)
                 {
-                    lblAttempted.Text = "" + sideAMed;
-                    sideAMed = sideAMed + 1;
+                    lblAttempted.Text = "" + valuesDC.sideAMed;
+                valuesDC.sideAMed = valuesDC.sideAMed + 1;
                 }
                 else if (rBtnHigh.Checked == true)
                 {
-                    lblAttempted.Text = "" + sideAHigh;
-                    sideAHigh = sideAHigh + 1;
+                    lblAttempted.Text = "" + valuesDC.sideAHigh;
+                valuesDC.sideAHigh = valuesDC.sideAHigh + 1;
                 }
             
         }
         
-
         private void lblAttempted_Click(object sender, EventArgs e)
         {
 
@@ -85,7 +96,7 @@ namespace WindowsFormsApp1
 
         private void rBtnLow_CheckedChanged(object sender, EventArgs e)
         {
-            lblAttempted.Text = "" + sideALow;
+            lblAttempted.Text = "" + valuesDC.sideALow;
 
         }
 
@@ -94,15 +105,15 @@ namespace WindowsFormsApp1
                 lblAttempted.Text = "";
                 if (rBtnLow.Checked == true)
                 {
-                    lblAttempted.Text = "" + sideALow;
+                    lblAttempted.Text = "" + valuesDC.sideALow;
                 }
                 else if (rBtnMedium.Checked == true)
                 {
-                    lblAttempted.Text = "" + sideAMed;
+                    lblAttempted.Text = "" + valuesDC.sideAMed;
                 }
                 else if (rBtnHigh.Checked == true)
                 {
-                    lblAttempted.Text = "" + sideAHigh;
+                    lblAttempted.Text = "" + valuesDC.sideAHigh;
                 }
             }
 
@@ -119,18 +130,18 @@ namespace WindowsFormsApp1
             {
                 if (rBtnLowTop.Checked == true)
                 {
-                    lblAttempted.Text = "" + cargoLow;
-                    cargoLow = cargoLow - 1;
+                    lblAttempted.Text = "" + valuesDC.cargoLow;
+                    valuesDC.cargoLow = valuesDC.cargoLow - 1;
                 }
                 else if (rBtnMediumTop.Checked == true)
                 {
-                     lblAttempted.Text = "" + cargoMed;
-                    cargoMed = cargoMed - 1;
+                     lblAttempted.Text = "" + valuesDC.cargoMed;
+                    valuesDC.cargoMed = valuesDC.cargoMed - 1;
                 }
                 else if (rBtnHighTop.Checked == true)
                 {
-                    lblAttempted.Text = "" + cargoHigh;
-                    cargoHigh = cargoHigh - 1;                    
+                    lblAttempted.Text = "" + valuesDC.cargoHigh;
+                    valuesDC.cargoHigh = valuesDC.cargoHigh - 1;                    
                 }
             }
             if (radioButton1.Checked == true)
@@ -140,37 +151,37 @@ namespace WindowsFormsApp1
                     if (rBtnLowTop.Checked == true)
                     {
 
-                        lblAttempted.Text = "" + sideALow;
-                        sideALow = sideALow - 1;
+                        lblAttempted.Text = "" + valuesDC.sideALow;
+                        valuesDC.sideALow = valuesDC.sideALow - 1;
                         
                     }
                     else if (rBtnMediumTop.Checked == true)
                     {
-                        lblAttempted.Text = "" + sideAMed;
-                        sideAMed = sideAMed - 1;
+                        lblAttempted.Text = "" + valuesDC.sideAMed;
+                        valuesDC.sideAMed = valuesDC.sideAMed - 1;
                     }
                     else if (rBtnHighTop.Checked == true)
                     {
-                        lblAttempted.Text = "" + sideAHigh;
-                        sideAHigh = sideAHigh - 1;
+                        lblAttempted.Text = "" + valuesDC.sideAHigh;
+                        valuesDC.sideAHigh = valuesDC.sideAHigh - 1;
                     }
                 }
                 else if (btnBTop.Checked == true)
                 {
                     if (rBtnLowTop.Checked == true)
                     {
-                        lblAttempted.Text = "" + sideBLow;
-                        sideBLow = sideBLow - 1;
+                        lblAttempted.Text = "" + valuesDC.sideBLow;
+                        valuesDC.sideBLow = valuesDC.sideBLow - 1;
                     }
                     else if (rBtnMediumTop.Checked == true)
                     {
-                        lblAttempted.Text = "" + sideBMed;
-                        sideBMed = sideBMed - 1;
+                        lblAttempted.Text = "" + valuesDC.sideBMed;
+                        valuesDC.sideBMed = valuesDC.sideBMed - 1;
                     }
                     else if (rBtnHighTop.Checked == true)
                     {
-                        lblAttempted.Text = "" + sideBHigh;
-                        sideBHigh = sideBHigh - 1;
+                        lblAttempted.Text = "" + valuesDC.sideBHigh;
+                        valuesDC.sideBHigh = valuesDC.sideBHigh - 1;
                     }
                 }
             }
@@ -178,12 +189,12 @@ namespace WindowsFormsApp1
 
         private void rBtnMedium_CheckedChanged(object sender, EventArgs e)
         {
-            lblAttempted.Text = "" + sideAMed;
+            lblAttempted.Text = "" + valuesDC.sideAMed;
         }
 
         private void rBtnHigh_CheckedChanged(object sender, EventArgs e)
         {
-            lblAttempted.Text = "" + sideAHigh;
+            lblAttempted.Text = "" + valuesDC.sideAHigh;
         }
 
         private void groupBox3_Enter(object sender, EventArgs e)
@@ -196,19 +207,19 @@ namespace WindowsFormsApp1
             if (radioButton2.Checked == true)
             {
                 if (rBtnLowTop.Checked == true)
-                {                  
-                    cargoLow = cargoLow + 1;
-                    lblAttempted.Text = "" + cargoLow;
+                {
+                    valuesDC.cargoLow = valuesDC.cargoLow + 1;
+                    lblAttempted.Text = "" + valuesDC.cargoLow;
                 }
                 else if (rBtnMediumTop.Checked == true)
-                {                    
-                    cargoMed = cargoMed + 1;
-                    lblAttempted.Text = "" + cargoMed;
+                {
+                    valuesDC.cargoMed = valuesDC.cargoMed + 1;
+                    lblAttempted.Text = "" + valuesDC.cargoMed;
                 }
                 else if (rBtnHighTop.Checked == true)
-                {                   
-                    cargoHigh = cargoHigh + 1;
-                    lblAttempted.Text = "" + cargoHigh;
+                {
+                    valuesDC.cargoHigh = valuesDC.cargoHigh + 1;
+                    lblAttempted.Text = "" + valuesDC.cargoHigh;
                 }
             }
             if (radioButton1.Checked == true)
@@ -217,39 +228,39 @@ namespace WindowsFormsApp1
                 {
                     if (rBtnLowTop.Checked == true)
                     {
-                        
-                        sideALow = sideALow + 1;
-                        lblAttempted.Text = "" + sideALow;
+
+                        valuesDC.sideALow = valuesDC.sideALow + 1;
+                        lblAttempted.Text = "" + valuesDC.sideALow;
                     }
                     else if (rBtnMediumTop.Checked == true)
                     {
-                        
-                        sideAMed = sideAMed + 1;
-                        lblAttempted.Text = "" + sideAMed;
+
+                        valuesDC.sideAMed = valuesDC.sideAMed + 1;
+                        lblAttempted.Text = "" + valuesDC.sideAMed;
                     }
                     else if (rBtnHighTop.Checked == true)
                     {
-                        
-                        sideAHigh = sideAHigh + 1;
-                        lblAttempted.Text = "" + sideAHigh;
+
+                        valuesDC.sideAHigh = valuesDC.sideAHigh + 1;
+                        lblAttempted.Text = "" + valuesDC.sideAHigh;
                     }
                 }
                 else if (btnBTop.Checked == true)
                 {
                     if (rBtnLowTop.Checked == true)
                     {
-                        lblAttempted.Text = "" + sideBLow;
-                        sideBLow = sideBLow + 1;
+                        lblAttempted.Text = "" + valuesDC.sideBLow;
+                        valuesDC.sideBLow = valuesDC.sideBLow + 1;
                     }
                     else if (rBtnMediumTop.Checked == true)
                     {
-                        lblAttempted.Text = "" + sideBMed;
-                        sideBMed = sideBMed + 1;
+                        lblAttempted.Text = "" + valuesDC.sideBMed;
+                        valuesDC.sideBMed = valuesDC.sideBMed + 1;
                     }
                     else if (rBtnHighTop.Checked == true)
                     {
-                        lblAttempted.Text = "" + sideBHigh;
-                        sideBHigh = sideBHigh + 1;
+                        lblAttempted.Text = "" + valuesDC.sideBHigh;
+                        valuesDC.sideBHigh = valuesDC.sideBHigh + 1;
                     }
                 }
             }
@@ -280,25 +291,17 @@ namespace WindowsFormsApp1
                 btnMinus2.Visible = true;
                 btnAdd1.Visible = true;
                 btnAdd2.Visible = true;
-                cBoxSuccessfulCargo.Visible = false;
-                cBoxHatchesSuccessful.Visible = true;
+                gbS.Visible = false;
+                gbS2.Visible = true;
+                gbS3.Visible = false;
+                gbS4.Visible = true;
+                groupBox7.Visible = false;
+                groupBox8.Visible = false;
+                groupBox9.Visible = false;
             }
         }
 
-        private void groupBox2_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox4_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
+     
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
@@ -317,8 +320,13 @@ namespace WindowsFormsApp1
                 btnMinus2.Visible = true;
                 btnAdd1.Visible = true;
                 btnAdd2.Visible = true;
-                cBoxSuccessfulCargo.Visible = true;
-                cBoxHatchesSuccessful.Visible = false;
+                gbS.Visible = true;
+                gbS2.Visible = false;
+                gbS3.Visible = true;
+                gbS4.Visible = false;
+                groupBox7.Visible = true;
+                groupBox8.Visible = true;
+                groupBox9.Visible = true;
                 lblAttempted2.Text = "";
                 lblAttempted.Text = "";
             }
@@ -328,17 +336,17 @@ namespace WindowsFormsApp1
         {
             if (radioButton2.Checked == true)
             {
-                lblAttempted.Text = "" + cargoLow;
+                lblAttempted.Text = "" + valuesDC.cargoLow;
             }
             else if (radioButton1.Checked == true)
             {
                 if (btnATop.Checked == true)
                 {
-                    lblAttempted.Text = "" + sideALow;
+                    lblAttempted.Text = "" + valuesDC.sideALow;
                 }
                 if (btnBTop.Checked == true)
                 {
-                    lblAttempted.Text = "" + sideBLow;
+                    lblAttempted.Text = "" + valuesDC.sideBLow;
                 }
             }
         }
@@ -347,17 +355,17 @@ namespace WindowsFormsApp1
         {
             if (radioButton2.Checked == true)
             {
-                lblAttempted.Text = "" + cargoMed;
+                lblAttempted.Text = "" + valuesDC.cargoMed;
             }
             else if (radioButton1.Checked == true)
             {
                 if (btnATop.Checked == true)
                 {
-                    lblAttempted.Text = "" + sideAMed;
+                    lblAttempted.Text = "" + valuesDC.sideAMed;
                 }
                 if (btnBTop.Checked == true)
                 {
-                    lblAttempted.Text = "" + sideBMed;
+                    lblAttempted.Text = "" + valuesDC.sideBMed;
                 }
             }
         }
@@ -366,25 +374,22 @@ namespace WindowsFormsApp1
         {
             if (radioButton2.Checked == true)
             {
-                lblAttempted.Text = "" + cargoHigh;
+                lblAttempted.Text = "" + valuesDC.cargoHigh;
             }
             else if (radioButton1.Checked == true)
             {
                 if (btnATop.Checked == true)
                 {
-                    lblAttempted.Text = "" + sideAHigh;
+                    lblAttempted.Text = "" + valuesDC.sideAHigh;
                 }
                 if (btnBTop.Checked == true)
                 {
-                    lblAttempted.Text = "" + sideBHigh;
+                    lblAttempted.Text = "" + valuesDC.sideBHigh;
                 }
             }
         }
 
-        private void lblAttempted2_Click(object sender, EventArgs e)
-        {
-
-        }
+     
 
         private void button2_Click_1(object sender, EventArgs e)
         {
@@ -392,18 +397,18 @@ namespace WindowsFormsApp1
             {
                 if (rBtnLowLow.Checked == true)
                 {
-                    cargoLow2 = cargoLow2 + 1;
-                    lblAttempted2.Text = "" + cargoLow2;
+                    valuesDC.cargoLow2 = valuesDC.cargoLow2 + 1;
+                    lblAttempted2.Text = "" + valuesDC.cargoLow2;
                 }
                 else if (rBtnMediumLow.Checked == true)
                 {
-                    cargoMed2 = cargoMed2 + 1;
-                    lblAttempted2.Text = "" + cargoMed2;
+                    valuesDC.cargoMed2 = valuesDC.cargoMed2 + 1;
+                    lblAttempted2.Text = "" + valuesDC.cargoMed2;
                 }
                 else if (rBtnHighLow.Checked == true)
                 {
-                    cargoHigh2 = cargoHigh2 + 1;
-                    lblAttempted2.Text = "" + cargoHigh2;
+                    valuesDC.cargoHigh2 = valuesDC.cargoHigh2 + 1;
+                    lblAttempted2.Text = "" + valuesDC.cargoHigh2;
                 }
             }
             if (radioButton1.Checked == true)
@@ -413,38 +418,38 @@ namespace WindowsFormsApp1
                     if (rBtnLowLow.Checked == true)
                     {
 
-                        sideALow2 = sideALow2 + 1;
-                        lblAttempted2.Text = "" + sideALow2;
+                        valuesDC.sideALow2 = valuesDC.sideALow2 + 1;
+                        lblAttempted2.Text = "" + valuesDC.sideALow2;
                     }
                     else if (rBtnMediumLow.Checked == true)
                     {
 
-                        sideAMed2 = sideAMed2 + 1;
-                        lblAttempted2.Text = "" + sideAMed2;
+                        valuesDC.sideAMed2 = valuesDC.sideAMed2 + 1;
+                        lblAttempted2.Text = "" + valuesDC.sideAMed2;
                     }
                     else if (rBtnHighLow.Checked == true)
                     {
 
-                        sideAHigh2 = sideAHigh2 + 1;
-                        lblAttempted2.Text = "" + sideAHigh2;
+                        valuesDC.sideAHigh2 = valuesDC.sideAHigh2 + 1;
+                        lblAttempted2.Text = "" + valuesDC.sideAHigh2;
                     }
                 }
                 else if (btnBLow.Checked == true)
                 {
                     if (rBtnLowLow.Checked == true)
                     {
-                        lblAttempted2.Text = "" + sideBLow2;
-                        sideBLow2 = sideBLow2 + 1;
+                        lblAttempted2.Text = "" + valuesDC.sideBLow2;
+                        valuesDC.sideBLow2 = valuesDC.sideBLow2 + 1;
                     }
                     else if (rBtnMediumLow.Checked == true)
                     {
-                        lblAttempted2.Text = "" + sideBMed2;
-                        sideBMed2 = sideBMed2 + 1;
+                        lblAttempted2.Text = "" + valuesDC.sideBMed2;
+                        valuesDC.sideBMed2 = valuesDC.sideBMed2 + 1;
                     }
                     else if (rBtnHighLow.Checked == true)
                     {
-                        lblAttempted2.Text = "" + sideBHigh2;
-                        sideBHigh2 = sideBHigh2 + 1;
+                        lblAttempted2.Text = "" + valuesDC.sideBHigh2;
+                        valuesDC.sideBHigh2 = valuesDC.sideBHigh2 + 1;
                     }
                 }
             }
@@ -478,17 +483,17 @@ namespace WindowsFormsApp1
         {
             if (radioButton2.Checked == true)
             {
-                lblAttempted2.Text = "" + cargoLow2;
+                lblAttempted2.Text = "" + valuesDC.cargoLow2;
             }
             else if (radioButton1.Checked == true)
             {
                 if (btnALow.Checked == true)
                 {
-                    lblAttempted2.Text = "" + sideALow2;
+                    lblAttempted2.Text = "" + valuesDC.sideALow2;
                 }
                 if (btnBTop.Checked == true)
                 {
-                    lblAttempted2.Text = "" + sideBLow2;
+                    lblAttempted2.Text = "" + valuesDC.sideBLow2;
                 }
             }
         }
@@ -497,17 +502,17 @@ namespace WindowsFormsApp1
         {
             if (radioButton2.Checked == true)
             {
-                lblAttempted2.Text = "" + cargoMed2;
+                lblAttempted2.Text = "" + valuesDC.cargoMed2;
             }
             else if (radioButton1.Checked == true)
             {
                 if (btnALow.Checked == true)
                 {
-                    lblAttempted2.Text = "" + sideAMed2;
+                    lblAttempted2.Text = "" + valuesDC.sideAMed2;
                 }
                 if (btnBLow.Checked == true)
                 {
-                    lblAttempted2.Text = "" + sideBMed2;
+                    lblAttempted2.Text = "" + valuesDC.sideBMed2;
                 }
             }
         }
@@ -516,17 +521,17 @@ namespace WindowsFormsApp1
         {
             if (radioButton2.Checked == true)
             {
-                lblAttempted2.Text = "" + cargoHigh2;
+                lblAttempted2.Text = "" + valuesDC.cargoHigh2;
             }
             else if (radioButton1.Checked == true)
             {
                 if (btnALow.Checked == true)
                 {
-                    lblAttempted2.Text = "" + sideAHigh2;
+                    lblAttempted2.Text = "" + valuesDC.sideAHigh2;
                 }
                 if (btnBLow.Checked == true)
                 {
-                    lblAttempted2.Text = "" + sideBHigh2;
+                    lblAttempted2.Text = "" + valuesDC.sideBHigh2;
                 }
             }
         }
@@ -537,18 +542,18 @@ namespace WindowsFormsApp1
             {
                 if (rBtnLowLow.Checked == true)
                 {
-                    lblAttempted2.Text = "" + cargoLow2;
-                    cargoLow2 = cargoLow2 - 1;
+                    lblAttempted2.Text = "" + valuesDC.cargoLow2;
+                    valuesDC.cargoLow2 = valuesDC.cargoLow2 - 1;
                 }
                 else if (rBtnMediumLow.Checked == true)
                 {
-                    lblAttempted2.Text = "" + cargoMed2;
-                    cargoMed2 = cargoMed2 - 1;
+                    lblAttempted2.Text = "" + valuesDC.cargoMed2;
+                    valuesDC.cargoMed2 = valuesDC.cargoMed2 - 1;
                 }
                 else if (rBtnHighLow.Checked == true)
                 {
-                    lblAttempted2.Text = "" + cargoHigh2;
-                    cargoHigh2 = cargoHigh2 - 1;
+                    lblAttempted2.Text = "" + valuesDC.cargoHigh2;
+                    valuesDC.cargoHigh2 = valuesDC.cargoHigh2 - 1;
                 }
             }
             if (radioButton1.Checked == true)
@@ -558,37 +563,37 @@ namespace WindowsFormsApp1
                     if (rBtnLowLow.Checked == true)
                     {
 
-                        lblAttempted2.Text = "" + sideALow2;
-                        sideALow2 = sideALow2 - 1;
+                        lblAttempted2.Text = "" + valuesDC.sideALow2;
+                        valuesDC.sideALow2 = valuesDC.sideALow2 - 1;
 
                     }
                     else if (rBtnMediumLow.Checked == true)
                     {
-                        lblAttempted2.Text = "" + sideAMed2;
-                        sideAMed2 = sideAMed2 - 1;
+                        lblAttempted2.Text = "" + valuesDC.sideAMed2;
+                        valuesDC.sideAMed2 = valuesDC.sideAMed2 - 1;
                     }
                     else if (rBtnHighLow.Checked == true)
                     {
-                        lblAttempted.Text = "" + sideAHigh2;
-                        sideAHigh2 = sideAHigh2 - 1;
+                        lblAttempted.Text = "" + valuesDC.sideAHigh2;
+                        valuesDC.sideAHigh2 = valuesDC.sideAHigh2 - 1;
                     }
                 }
                 else if (btnBLow.Checked == true)
                 {
                     if (rBtnLowLow.Checked == true)
                     {
-                        lblAttempted2.Text = "" + sideBLow2;
-                        sideBLow2 = sideBLow2 - 1;
+                        lblAttempted2.Text = "" + valuesDC.sideBLow2;
+                        valuesDC.sideBLow2 = valuesDC.sideBLow2 - 1;
                     }
                     else if (rBtnMediumLow.Checked == true)
                     {
-                        lblAttempted2.Text = "" + sideBMed2;
-                        sideBMed2 = sideBMed2 - 1;
+                        lblAttempted2.Text = "" + valuesDC.sideBMed2;
+                        valuesDC.sideBMed2 = valuesDC.sideBMed2 - 1;
                     }
                     else if (rBtnHighLow.Checked == true)
                     {
-                        lblAttempted2.Text = "" + sideBHigh2;
-                        sideBHigh2 = sideBHigh2 - 1;
+                        lblAttempted2.Text = "" + valuesDC.sideBHigh2;
+                        valuesDC.sideBHigh2 = valuesDC.sideBHigh2 - 1;
                     }
                 }
             }
@@ -619,8 +624,13 @@ namespace WindowsFormsApp1
             lblAttempted.Text = "";
             radioButton1.Checked = false;
             radioButton2.Checked = false;
-            cBoxHatchesSuccessful.Visible = false;
-            cBoxSuccessfulCargo.Visible = false;
+            gbS.Visible = false;
+            gbS2.Visible = false;
+            gbS3.Visible = false;
+            gbS4.Visible = false;
+            groupBox7.Visible = false;
+            groupBox8.Visible = false;
+            groupBox9.Visible = false;
         }
 
         private void cBoxHatch_CheckedChanged(object sender, EventArgs e)
@@ -632,38 +642,38 @@ namespace WindowsFormsApp1
                     if (rBtnLowTop.Checked == true)
                     {
 
-                        sideALow = sideALow + 1;
-                        lblAttempted.Text = "" + sideALow;
+                        valuesDC.sideALow = valuesDC.sideALow + 1;
+                        lblAttempted.Text = "" + valuesDC.sideALow;
                     }
                     else if (rBtnMediumTop.Checked == true)
                     {
 
-                        sideAMed = sideAMed + 1;
-                        lblAttempted.Text = "" + sideAMed;
+                        valuesDC.sideAMed = valuesDC.sideAMed + 1;
+                        lblAttempted.Text = "" + valuesDC.sideAMed;
                     }
                     else if (rBtnHighTop.Checked == true)
                     {
 
-                        sideAHigh = sideAHigh + 1;
-                        lblAttempted.Text = "" + sideAHigh;
+                        valuesDC.sideAHigh = valuesDC.sideAHigh + 1;
+                        lblAttempted.Text = "" + valuesDC.sideAHigh;
                     }
                 }
                 else if (btnBTop.Checked == true)
                 {
                     if (rBtnLowTop.Checked == true)
                     {
-                        lblAttempted.Text = "" + sideBLow;
-                        sideBLow = sideBLow + 1;
+                        lblAttempted.Text = "" + valuesDC.sideBLow;
+                        valuesDC.sideBLow = valuesDC.sideBLow + 1;
                     }
                     else if (rBtnMediumTop.Checked == true)
                     {
-                        lblAttempted.Text = "" + sideBMed;
-                        sideBMed = sideBMed + 1;
+                        lblAttempted.Text = "" + valuesDC.sideBMed;
+                        valuesDC.sideBMed = valuesDC.sideBMed + 1;
                     }
                     else if (rBtnHighTop.Checked == true)
                     {
-                        lblAttempted.Text = "" + sideBHigh;
-                        sideBHigh = sideBHigh + 1;
+                        lblAttempted.Text = "" + valuesDC.sideBHigh;
+                        valuesDC.sideBHigh = valuesDC.sideBHigh + 1;
                     }
                 }
             }
@@ -671,7 +681,258 @@ namespace WindowsFormsApp1
 
         private void cBoxSuccessfulCargo_SelectedIndexChanged(object sender, EventArgs e)
         {
+            
+        }
 
+        private void rBtnLow1S_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rBtnLow1S.Checked == true)
+            {
+                valuesDC.cargoLowS = 1;
+            }
+
+        }
+
+        private void rBtnLow2S_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rBtnLow2S.Checked == true)
+            {
+                valuesDC.cargoLowS = 2;
+            }
+        }
+
+        private void rBtnMed1S_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rBtnMed1S.Checked == true)
+            {
+                valuesDC.cargoMedS = 1;
+            }
+        }
+
+        private void rBtnMed2S_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rBtnMed2S.Checked == true)
+            {
+                valuesDC.cargoMedS = 2;
+            }
+        }
+
+        private void rBtnHigh1S_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rBtnHigh1S.Checked == true)
+            {
+                valuesDC.cargoHighS = 1;
+            }
+        }
+
+        private void rBtnHigh2S_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rBtnHigh2S.Checked == true)
+            {
+                valuesDC.cargoHighS = 2;
+            }
+        }
+
+        private void rBtnHighHatchA_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox7_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cBoxMedHatchA_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cBoxMedHatchA.Checked == true)
+            {
+                valuesDC.sideAMedS = true;
+            }
+            else if (cBoxMedHatchA.Checked == false)
+            {
+                valuesDC.sideAMedS = false;
+            }
+        }
+
+        private void cBoxHighHatchA_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cBoxHighHatchA.Checked == true)
+            {
+                valuesDC.sideAHighS = true;
+            }
+            else if (cBoxHighHatchA.Checked == false)
+            {
+                valuesDC.sideAHighS = false;
+            }
+        }
+
+        private void cBoxLowHatchB_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cBoxLowHatchB.Checked == true)
+            {
+                valuesDC.sideBLowS = true;
+            }
+            else if (cBoxLowHatchB.Checked == false)
+            {
+                valuesDC.sideBLowS = false;
+            }
+        }
+
+        private void cBoxMedHatchB_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cBoxMedHatchB.Checked == true)
+            {
+                valuesDC.sideBMedS = true;
+            }
+            else if (cBoxMedHatchB.Checked == false)
+            {
+                valuesDC.sideBMedS = false;
+            }
+        }
+
+        private void cBoxHighHatchB_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cBoxHighHatchB.Checked == true)
+            {
+                valuesDC.sideBHighS = true;
+            }
+            else if (cBoxHighHatchB.Checked == false)
+            {
+                valuesDC.sideBHighS = false;
+            }
+        }
+
+        private void cBoxLowHatchA_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cBoxLowHatchA.Checked == true)
+            {
+                valuesDC.sideALowS = true;
+            }
+            else if (cBoxLowHatchA.Checked == false)
+            {
+                valuesDC.sideALowS = false;
+            }
+        }
+
+        private void rBtnLow1S2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rBtnLow1S2.Checked == true)
+            {
+                valuesDC.cargoLowS2 = 1;
+            }
+        }
+
+        private void rBtnLow2S2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rBtnLow2S2.Checked == true)
+            {
+                valuesDC.cargoLowS2 = 2;
+            }
+        }
+
+        private void rBtnMed1S2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rBtnMed1S2.Checked == true)
+            {
+                valuesDC.cargoMedS2 = 1;
+            }
+        }
+
+        private void rBtnMed2S2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rBtnMed2S2.Checked == true)
+            {
+                valuesDC.cargoMedS2 = 2;
+            }
+        }
+
+        private void rBtnHigh1S2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rBtnHigh1S2.Checked == true)
+            {
+                valuesDC.cargoHighS2 = 1;
+            }
+        }
+
+        private void rBtnHigh2S2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rBtnHigh2S2.Checked == true)
+            {
+                valuesDC.cargoHighS2 = 2;
+            }
+        }
+
+        private void cBoxLowHatchA2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cBoxLowHatchA2.Checked == true)
+            {
+                valuesDC.sideALowS2 = true;
+            }
+            else if (cBoxLowHatchA2.Checked == false)
+            {
+                valuesDC.sideALowS2 = false;
+            }
+        }
+
+        private void cBoxMedHatchA2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cBoxMedHatchA2.Checked == true)
+            {
+                valuesDC.sideAMedS2 = true;
+            }
+            else if (cBoxMedHatchA2.Checked == false)
+            {
+                valuesDC.sideAMedS2 = false;
+            }
+        }
+
+        private void cBoxHighHatchA2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cBoxHighHatchA2.Checked == true)
+            {
+                valuesDC.sideAHighS2 = true;
+            }
+            else if (cBoxHighHatchA2.Checked == false)
+            {
+                valuesDC.sideAHighS2 = false;
+            }
+        }
+
+        private void cBoxHighHatchB2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cBoxHighHatchB2.Checked == true)
+            {
+                valuesDC.sideBHighS2 = true;
+            }
+            else if (cBoxHighHatchB2.Checked == false)
+            {
+                valuesDC.sideBHighS2 = false;
+            }
+        }
+
+        private void cBoxMedHatchB2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cBoxMedHatchB2.Checked == true)
+            {
+                valuesDC.sideBMedS2 = true;
+            }
+            else if (cBoxMedHatchB2.Checked == false)
+            {
+                valuesDC.sideBMedS2 = false;
+            }
+        }
+
+        private void cBoxLowHatchB2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cBoxLowHatchB2.Checked == true)
+            {
+                valuesDC.sideBLowS2 = true;
+            }
+            else if (cBoxLowHatchB2.Checked == false)
+            {
+                valuesDC.sideBLowS2 = false;
+            }
         }
     }
 }

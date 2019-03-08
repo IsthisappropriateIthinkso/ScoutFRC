@@ -43,6 +43,10 @@
             this.label5 = new System.Windows.Forms.Label();
             this.lViewLogIn = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lblCargoTotal = new System.Windows.Forms.Label();
+            this.lblHatchesTotal = new System.Windows.Forms.Label();
+            this.lblCargoTotal2 = new System.Windows.Forms.Label();
+            this.lblHatchesTotal2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lViewAutonomous
@@ -152,11 +156,52 @@
             // 
             this.columnHeader1.Text = "Event ID";
             // 
+            // lblCargoTotal
+            // 
+            this.lblCargoTotal.AutoSize = true;
+            this.lblCargoTotal.Location = new System.Drawing.Point(408, 132);
+            this.lblCargoTotal.Name = "lblCargoTotal";
+            this.lblCargoTotal.Size = new System.Drawing.Size(87, 13);
+            this.lblCargoTotal.TabIndex = 10;
+            this.lblCargoTotal.Text = "Rocket 1 cargo: ";
+            this.lblCargoTotal.Click += new System.EventHandler(this.lblCargoHigh_Click);
+            // 
+            // lblHatchesTotal
+            // 
+            this.lblHatchesTotal.AutoSize = true;
+            this.lblHatchesTotal.Location = new System.Drawing.Point(408, 154);
+            this.lblHatchesTotal.Name = "lblHatchesTotal";
+            this.lblHatchesTotal.Size = new System.Drawing.Size(98, 13);
+            this.lblHatchesTotal.TabIndex = 11;
+            this.lblHatchesTotal.Text = "Rocket 1 hatches: ";
+            // 
+            // lblCargoTotal2
+            // 
+            this.lblCargoTotal2.AutoSize = true;
+            this.lblCargoTotal2.Location = new System.Drawing.Point(408, 177);
+            this.lblCargoTotal2.Name = "lblCargoTotal2";
+            this.lblCargoTotal2.Size = new System.Drawing.Size(87, 13);
+            this.lblCargoTotal2.TabIndex = 12;
+            this.lblCargoTotal2.Text = "Rocket 2 cargo: ";
+            // 
+            // lblHatchesTotal2
+            // 
+            this.lblHatchesTotal2.AutoSize = true;
+            this.lblHatchesTotal2.Location = new System.Drawing.Point(408, 200);
+            this.lblHatchesTotal2.Name = "lblHatchesTotal2";
+            this.lblHatchesTotal2.Size = new System.Drawing.Size(98, 13);
+            this.lblHatchesTotal2.TabIndex = 13;
+            this.lblHatchesTotal2.Text = "Rocket 2 hatches: ";
+            // 
             // FRC_Statistics
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblHatchesTotal2);
+            this.Controls.Add(this.lblCargoTotal2);
+            this.Controls.Add(this.lblHatchesTotal);
+            this.Controls.Add(this.lblCargoTotal);
             this.Controls.Add(this.lViewLogIn);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -170,6 +215,7 @@
             this.Controls.Add(this.lViewAutonomous);
             this.Name = "FRC_Statistics";
             this.Text = "FRC_Statistics";
+            this.Load += new System.EventHandler(this.FRC_Statistics_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -189,5 +235,9 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ListView lViewLogIn;
         private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.Label lblCargoTotal;
+        private System.Windows.Forms.Label lblHatchesTotal;
+        private System.Windows.Forms.Label lblCargoTotal2;
+        private System.Windows.Forms.Label lblHatchesTotal2;
     }
 }

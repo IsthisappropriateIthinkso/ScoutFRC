@@ -57,7 +57,6 @@
             this.btnMinus2 = new System.Windows.Forms.Button();
             this.btnAdd2 = new System.Windows.Forms.Button();
             this.lblAttempted2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.rBtnLowLow = new System.Windows.Forms.RadioButton();
             this.rBtnMediumLow = new System.Windows.Forms.RadioButton();
@@ -72,9 +71,43 @@
             this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.radioButton6 = new System.Windows.Forms.RadioButton();
             this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.cBoxHatchesSuccessful = new System.Windows.Forms.CheckedListBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.cBoxSuccessfulCargo = new System.Windows.Forms.CheckedListBox();
+            this.rBtnLow1S = new System.Windows.Forms.RadioButton();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.rBtnLow2S = new System.Windows.Forms.RadioButton();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.rBtnMed2S = new System.Windows.Forms.RadioButton();
+            this.rBtnMed1S = new System.Windows.Forms.RadioButton();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.rBtnHigh2S = new System.Windows.Forms.RadioButton();
+            this.rBtnHigh1S = new System.Windows.Forms.RadioButton();
+            this.gbS = new System.Windows.Forms.GroupBox();
+            this.gbS2 = new System.Windows.Forms.GroupBox();
+            this.cBoxMedHatchB = new System.Windows.Forms.CheckBox();
+            this.cBoxHighHatchB = new System.Windows.Forms.CheckBox();
+            this.cBoxLowHatchB = new System.Windows.Forms.CheckBox();
+            this.cBoxHighHatchA = new System.Windows.Forms.CheckBox();
+            this.cBoxMedHatchA = new System.Windows.Forms.CheckBox();
+            this.cBoxLowHatchA = new System.Windows.Forms.CheckBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.gbS3 = new System.Windows.Forms.GroupBox();
+            this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.rBtnLow2S2 = new System.Windows.Forms.RadioButton();
+            this.rBtnLow1S2 = new System.Windows.Forms.RadioButton();
+            this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.rBtnHigh2S2 = new System.Windows.Forms.RadioButton();
+            this.rBtnHigh1S2 = new System.Windows.Forms.RadioButton();
+            this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.rBtnMed2S2 = new System.Windows.Forms.RadioButton();
+            this.rBtnMed1S2 = new System.Windows.Forms.RadioButton();
+            this.label11 = new System.Windows.Forms.Label();
+            this.gbS4 = new System.Windows.Forms.GroupBox();
+            this.cBoxMedHatchB2 = new System.Windows.Forms.CheckBox();
+            this.cBoxHighHatchB2 = new System.Windows.Forms.CheckBox();
+            this.cBoxLowHatchB2 = new System.Windows.Forms.CheckBox();
+            this.cBoxHighHatchA2 = new System.Windows.Forms.CheckBox();
+            this.cBoxMedHatchA2 = new System.Windows.Forms.CheckBox();
+            this.cBoxLowHatchA2 = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.gbHeightTop.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -83,6 +116,16 @@
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
+            this.groupBox7.SuspendLayout();
+            this.groupBox8.SuspendLayout();
+            this.groupBox9.SuspendLayout();
+            this.gbS.SuspendLayout();
+            this.gbS2.SuspendLayout();
+            this.gbS3.SuspendLayout();
+            this.groupBox11.SuspendLayout();
+            this.groupBox12.SuspendLayout();
+            this.groupBox13.SuspendLayout();
+            this.gbS4.SuspendLayout();
             this.SuspendLayout();
             // 
             // rBtnLow
@@ -196,6 +239,7 @@
             // 
             // gbHeightTop
             // 
+            this.gbHeightTop.BackColor = System.Drawing.SystemColors.Control;
             this.gbHeightTop.Controls.Add(this.rBtnHighTop);
             this.gbHeightTop.Controls.Add(this.rBtnLowTop);
             this.gbHeightTop.Controls.Add(this.rBtnMediumTop);
@@ -205,7 +249,6 @@
             this.gbHeightTop.TabIndex = 35;
             this.gbHeightTop.TabStop = false;
             this.gbHeightTop.Visible = false;
-            this.gbHeightTop.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // label1
             // 
@@ -232,6 +275,7 @@
             this.lblAttempted.Name = "lblAttempted";
             this.lblAttempted.Size = new System.Drawing.Size(79, 38);
             this.lblAttempted.TabIndex = 40;
+            this.lblAttempted.Text = "0";
             this.lblAttempted.Visible = false;
             this.lblAttempted.Click += new System.EventHandler(this.lblAttempted_Click);
             // 
@@ -257,7 +301,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.label8.Location = new System.Drawing.Point(326, 12);
+            this.label8.Location = new System.Drawing.Point(307, 7);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(163, 16);
             this.label8.TabIndex = 49;
@@ -267,7 +311,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(255, 28);
+            this.label9.Location = new System.Drawing.Point(307, 23);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(308, 16);
             this.label9.TabIndex = 50;
@@ -337,21 +381,21 @@
             // 
             // gbSideTop
             // 
+            this.gbSideTop.BackColor = System.Drawing.SystemColors.Control;
             this.gbSideTop.Controls.Add(this.btnBTop);
             this.gbSideTop.Controls.Add(this.btnATop);
-            this.gbSideTop.Location = new System.Drawing.Point(370, 160);
+            this.gbSideTop.Location = new System.Drawing.Point(370, 151);
             this.gbSideTop.Name = "gbSideTop";
-            this.gbSideTop.Size = new System.Drawing.Size(77, 48);
+            this.gbSideTop.Size = new System.Drawing.Size(77, 66);
             this.gbSideTop.TabIndex = 35;
             this.gbSideTop.TabStop = false;
             this.gbSideTop.Visible = false;
-            this.gbSideTop.Enter += new System.EventHandler(this.groupBox4_Enter);
             // 
             // btnBTop
             // 
             this.btnBTop.AutoSize = true;
             this.btnBTop.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBTop.Location = new System.Drawing.Point(5, 26);
+            this.btnBTop.Location = new System.Drawing.Point(5, 37);
             this.btnBTop.Name = "btnBTop";
             this.btnBTop.Size = new System.Drawing.Size(66, 20);
             this.btnBTop.TabIndex = 1;
@@ -364,7 +408,7 @@
             // 
             this.btnATop.AutoSize = true;
             this.btnATop.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnATop.Location = new System.Drawing.Point(5, 0);
+            this.btnATop.Location = new System.Drawing.Point(5, 10);
             this.btnATop.Name = "btnATop";
             this.btnATop.Size = new System.Drawing.Size(66, 20);
             this.btnATop.TabIndex = 0;
@@ -378,19 +422,19 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(563, 126);
+            this.label2.ForeColor = System.Drawing.Color.Maroon;
+            this.label2.Location = new System.Drawing.Point(566, 133);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 24);
             this.label2.TabIndex = 55;
             this.label2.Text = "Misses";
             this.label2.Visible = false;
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // btnMinus2
             // 
             this.btnMinus2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMinus2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMinus2.Location = new System.Drawing.Point(604, 461);
+            this.btnMinus2.Location = new System.Drawing.Point(553, 446);
             this.btnMinus2.Name = "btnMinus2";
             this.btnMinus2.Size = new System.Drawing.Size(36, 36);
             this.btnMinus2.TabIndex = 56;
@@ -403,7 +447,7 @@
             // 
             this.btnAdd2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAdd2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd2.Location = new System.Drawing.Point(646, 461);
+            this.btnAdd2.Location = new System.Drawing.Point(595, 446);
             this.btnAdd2.Name = "btnAdd2";
             this.btnAdd2.Size = new System.Drawing.Size(36, 36);
             this.btnAdd2.TabIndex = 57;
@@ -415,30 +459,19 @@
             // lblAttempted2
             // 
             this.lblAttempted2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAttempted2.Location = new System.Drawing.Point(603, 420);
+            this.lblAttempted2.Location = new System.Drawing.Point(552, 405);
             this.lblAttempted2.Name = "lblAttempted2";
             this.lblAttempted2.Size = new System.Drawing.Size(79, 38);
             this.lblAttempted2.TabIndex = 58;
+            this.lblAttempted2.Text = "0";
             this.lblAttempted2.Visible = false;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(605, 386);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(68, 24);
-            this.label4.TabIndex = 59;
-            this.label4.Text = "Misses";
-            this.label4.Visible = false;
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.rBtnLowLow);
             this.groupBox2.Controls.Add(this.rBtnMediumLow);
             this.groupBox2.Controls.Add(this.rBtnHighLow);
-            this.groupBox2.Location = new System.Drawing.Point(483, 386);
+            this.groupBox2.Location = new System.Drawing.Point(453, 377);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(85, 87);
             this.groupBox2.TabIndex = 36;
@@ -488,7 +521,7 @@
             // 
             this.groupBox4.Controls.Add(this.btnBLow);
             this.groupBox4.Controls.Add(this.btnALow);
-            this.groupBox4.Location = new System.Drawing.Point(400, 412);
+            this.groupBox4.Location = new System.Drawing.Point(370, 403);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(77, 46);
             this.groupBox4.TabIndex = 36;
@@ -603,50 +636,439 @@
             this.radioButton7.Text = "Low";
             this.radioButton7.UseVisualStyleBackColor = true;
             // 
-            // cBoxHatchesSuccessful
-            // 
-            this.cBoxHatchesSuccessful.FormattingEnabled = true;
-            this.cBoxHatchesSuccessful.Items.AddRange(new object[] {
-            "A Low",
-            "A Medium",
-            "A High",
-            "B Low",
-            "B Medium",
-            "B High"});
-            this.cBoxHatchesSuccessful.Location = new System.Drawing.Point(659, 134);
-            this.cBoxHatchesSuccessful.Name = "cBoxHatchesSuccessful";
-            this.cBoxHatchesSuccessful.Size = new System.Drawing.Size(120, 94);
-            this.cBoxHatchesSuccessful.TabIndex = 60;
-            this.cBoxHatchesSuccessful.Visible = false;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(668, 107);
+            this.label7.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.label7.Location = new System.Drawing.Point(677, 105);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(101, 24);
             this.label7.TabIndex = 61;
             this.label7.Text = "Successful";
             this.label7.Visible = false;
             // 
-            // cBoxSuccessfulCargo
+            // rBtnLow1S
             // 
-            this.cBoxSuccessfulCargo.FormattingEnabled = true;
-            this.cBoxSuccessfulCargo.Items.AddRange(new object[] {
-            "Low (1)",
-            "Low (2)",
-            "Medium (1)",
-            "Medium (2)",
-            "High (1)",
-            "High (2)"});
-            this.cBoxSuccessfulCargo.Location = new System.Drawing.Point(658, 134);
-            this.cBoxSuccessfulCargo.Name = "cBoxSuccessfulCargo";
-            this.cBoxSuccessfulCargo.Size = new System.Drawing.Size(130, 94);
-            this.cBoxSuccessfulCargo.TabIndex = 62;
-            this.cBoxSuccessfulCargo.Visible = false;
-            this.cBoxSuccessfulCargo.SelectedIndexChanged += new System.EventHandler(this.cBoxSuccessfulCargo_SelectedIndexChanged);
+            this.rBtnLow1S.AutoSize = true;
+            this.rBtnLow1S.Location = new System.Drawing.Point(1, 0);
+            this.rBtnLow1S.Name = "rBtnLow1S";
+            this.rBtnLow1S.Size = new System.Drawing.Size(97, 17);
+            this.rBtnLow1S.TabIndex = 63;
+            this.rBtnLow1S.TabStop = true;
+            this.rBtnLow1S.Text = "Low (1 Scored)";
+            this.rBtnLow1S.UseVisualStyleBackColor = true;
+            this.rBtnLow1S.CheckedChanged += new System.EventHandler(this.rBtnLow1S_CheckedChanged);
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.rBtnLow2S);
+            this.groupBox7.Controls.Add(this.rBtnLow1S);
+            this.groupBox7.Location = new System.Drawing.Point(0, 0);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(109, 41);
+            this.groupBox7.TabIndex = 64;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Visible = false;
+            this.groupBox7.Enter += new System.EventHandler(this.groupBox7_Enter);
+            // 
+            // rBtnLow2S
+            // 
+            this.rBtnLow2S.AutoSize = true;
+            this.rBtnLow2S.Location = new System.Drawing.Point(1, 18);
+            this.rBtnLow2S.Name = "rBtnLow2S";
+            this.rBtnLow2S.Size = new System.Drawing.Size(97, 17);
+            this.rBtnLow2S.TabIndex = 64;
+            this.rBtnLow2S.TabStop = true;
+            this.rBtnLow2S.Text = "Low (2 Scored)";
+            this.rBtnLow2S.UseVisualStyleBackColor = true;
+            this.rBtnLow2S.CheckedChanged += new System.EventHandler(this.rBtnLow2S_CheckedChanged);
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.Controls.Add(this.rBtnMed2S);
+            this.groupBox8.Controls.Add(this.rBtnMed1S);
+            this.groupBox8.Location = new System.Drawing.Point(0, 35);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(109, 41);
+            this.groupBox8.TabIndex = 65;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Visible = false;
+            // 
+            // rBtnMed2S
+            // 
+            this.rBtnMed2S.AutoSize = true;
+            this.rBtnMed2S.Location = new System.Drawing.Point(1, 22);
+            this.rBtnMed2S.Name = "rBtnMed2S";
+            this.rBtnMed2S.Size = new System.Drawing.Size(114, 17);
+            this.rBtnMed2S.TabIndex = 64;
+            this.rBtnMed2S.TabStop = true;
+            this.rBtnMed2S.Text = "Medium (2 Scored)";
+            this.rBtnMed2S.UseVisualStyleBackColor = true;
+            this.rBtnMed2S.CheckedChanged += new System.EventHandler(this.rBtnMed2S_CheckedChanged);
+            // 
+            // rBtnMed1S
+            // 
+            this.rBtnMed1S.AutoSize = true;
+            this.rBtnMed1S.Location = new System.Drawing.Point(1, 4);
+            this.rBtnMed1S.Name = "rBtnMed1S";
+            this.rBtnMed1S.Size = new System.Drawing.Size(114, 17);
+            this.rBtnMed1S.TabIndex = 63;
+            this.rBtnMed1S.TabStop = true;
+            this.rBtnMed1S.Text = "Medium (1 Scored)";
+            this.rBtnMed1S.UseVisualStyleBackColor = true;
+            this.rBtnMed1S.CheckedChanged += new System.EventHandler(this.rBtnMed1S_CheckedChanged);
+            // 
+            // groupBox9
+            // 
+            this.groupBox9.Controls.Add(this.rBtnHigh2S);
+            this.groupBox9.Controls.Add(this.rBtnHigh1S);
+            this.groupBox9.Location = new System.Drawing.Point(0, 72);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(109, 41);
+            this.groupBox9.TabIndex = 66;
+            this.groupBox9.TabStop = false;
+            this.groupBox9.Visible = false;
+            // 
+            // rBtnHigh2S
+            // 
+            this.rBtnHigh2S.AutoSize = true;
+            this.rBtnHigh2S.Location = new System.Drawing.Point(1, 26);
+            this.rBtnHigh2S.Name = "rBtnHigh2S";
+            this.rBtnHigh2S.Size = new System.Drawing.Size(99, 17);
+            this.rBtnHigh2S.TabIndex = 64;
+            this.rBtnHigh2S.TabStop = true;
+            this.rBtnHigh2S.Text = "High (2 Scored)";
+            this.rBtnHigh2S.UseVisualStyleBackColor = true;
+            this.rBtnHigh2S.CheckedChanged += new System.EventHandler(this.rBtnHigh2S_CheckedChanged);
+            // 
+            // rBtnHigh1S
+            // 
+            this.rBtnHigh1S.AutoSize = true;
+            this.rBtnHigh1S.Location = new System.Drawing.Point(1, 10);
+            this.rBtnHigh1S.Name = "rBtnHigh1S";
+            this.rBtnHigh1S.Size = new System.Drawing.Size(99, 17);
+            this.rBtnHigh1S.TabIndex = 63;
+            this.rBtnHigh1S.TabStop = true;
+            this.rBtnHigh1S.Text = "High (1 Scored)";
+            this.rBtnHigh1S.UseVisualStyleBackColor = true;
+            this.rBtnHigh1S.CheckedChanged += new System.EventHandler(this.rBtnHigh1S_CheckedChanged);
+            // 
+            // gbS
+            // 
+            this.gbS.Controls.Add(this.groupBox7);
+            this.gbS.Controls.Add(this.groupBox9);
+            this.gbS.Controls.Add(this.groupBox8);
+            this.gbS.Location = new System.Drawing.Point(669, 136);
+            this.gbS.Name = "gbS";
+            this.gbS.Size = new System.Drawing.Size(119, 116);
+            this.gbS.TabIndex = 67;
+            this.gbS.TabStop = false;
+            this.gbS.Text = "groupBox10";
+            this.gbS.Visible = false;
+            // 
+            // gbS2
+            // 
+            this.gbS2.Controls.Add(this.cBoxMedHatchB);
+            this.gbS2.Controls.Add(this.cBoxHighHatchB);
+            this.gbS2.Controls.Add(this.cBoxLowHatchB);
+            this.gbS2.Controls.Add(this.cBoxHighHatchA);
+            this.gbS2.Controls.Add(this.cBoxMedHatchA);
+            this.gbS2.Controls.Add(this.cBoxLowHatchA);
+            this.gbS2.Location = new System.Drawing.Point(279, 89);
+            this.gbS2.Name = "gbS2";
+            this.gbS2.Size = new System.Drawing.Size(99, 119);
+            this.gbS2.TabIndex = 68;
+            this.gbS2.TabStop = false;
+            this.gbS2.Visible = false;
+            // 
+            // cBoxMedHatchB
+            // 
+            this.cBoxMedHatchB.AutoSize = true;
+            this.cBoxMedHatchB.Location = new System.Drawing.Point(2, 73);
+            this.cBoxMedHatchB.Name = "cBoxMedHatchB";
+            this.cBoxMedHatchB.Size = new System.Drawing.Size(79, 17);
+            this.cBoxMedHatchB.TabIndex = 5;
+            this.cBoxMedHatchB.Text = "Medium (B)";
+            this.cBoxMedHatchB.UseVisualStyleBackColor = true;
+            this.cBoxMedHatchB.CheckedChanged += new System.EventHandler(this.cBoxMedHatchB_CheckedChanged);
+            // 
+            // cBoxHighHatchB
+            // 
+            this.cBoxHighHatchB.AutoSize = true;
+            this.cBoxHighHatchB.Location = new System.Drawing.Point(2, 90);
+            this.cBoxHighHatchB.Name = "cBoxHighHatchB";
+            this.cBoxHighHatchB.Size = new System.Drawing.Size(64, 17);
+            this.cBoxHighHatchB.TabIndex = 4;
+            this.cBoxHighHatchB.Text = "High (B)";
+            this.cBoxHighHatchB.UseVisualStyleBackColor = true;
+            this.cBoxHighHatchB.CheckedChanged += new System.EventHandler(this.cBoxHighHatchB_CheckedChanged);
+            // 
+            // cBoxLowHatchB
+            // 
+            this.cBoxLowHatchB.AutoSize = true;
+            this.cBoxLowHatchB.Location = new System.Drawing.Point(2, 56);
+            this.cBoxLowHatchB.Name = "cBoxLowHatchB";
+            this.cBoxLowHatchB.Size = new System.Drawing.Size(62, 17);
+            this.cBoxLowHatchB.TabIndex = 3;
+            this.cBoxLowHatchB.Text = "Low (B)";
+            this.cBoxLowHatchB.UseVisualStyleBackColor = true;
+            this.cBoxLowHatchB.CheckedChanged += new System.EventHandler(this.cBoxLowHatchB_CheckedChanged);
+            // 
+            // cBoxHighHatchA
+            // 
+            this.cBoxHighHatchA.AutoSize = true;
+            this.cBoxHighHatchA.Location = new System.Drawing.Point(2, 39);
+            this.cBoxHighHatchA.Name = "cBoxHighHatchA";
+            this.cBoxHighHatchA.Size = new System.Drawing.Size(64, 17);
+            this.cBoxHighHatchA.TabIndex = 2;
+            this.cBoxHighHatchA.Text = "High (A)";
+            this.cBoxHighHatchA.UseVisualStyleBackColor = true;
+            this.cBoxHighHatchA.CheckedChanged += new System.EventHandler(this.cBoxHighHatchA_CheckedChanged);
+            // 
+            // cBoxMedHatchA
+            // 
+            this.cBoxMedHatchA.AutoSize = true;
+            this.cBoxMedHatchA.Location = new System.Drawing.Point(2, 23);
+            this.cBoxMedHatchA.Name = "cBoxMedHatchA";
+            this.cBoxMedHatchA.Size = new System.Drawing.Size(79, 17);
+            this.cBoxMedHatchA.TabIndex = 1;
+            this.cBoxMedHatchA.Text = "Medium (A)";
+            this.cBoxMedHatchA.UseVisualStyleBackColor = true;
+            this.cBoxMedHatchA.CheckedChanged += new System.EventHandler(this.cBoxMedHatchA_CheckedChanged);
+            // 
+            // cBoxLowHatchA
+            // 
+            this.cBoxLowHatchA.AutoSize = true;
+            this.cBoxLowHatchA.Location = new System.Drawing.Point(2, 7);
+            this.cBoxLowHatchA.Name = "cBoxLowHatchA";
+            this.cBoxLowHatchA.Size = new System.Drawing.Size(62, 17);
+            this.cBoxLowHatchA.TabIndex = 0;
+            this.cBoxLowHatchA.Text = "Low (A)";
+            this.cBoxLowHatchA.UseVisualStyleBackColor = true;
+            this.cBoxLowHatchA.CheckedChanged += new System.EventHandler(this.cBoxLowHatchA_CheckedChanged);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Maroon;
+            this.label4.Location = new System.Drawing.Point(557, 377);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(68, 24);
+            this.label4.TabIndex = 69;
+            this.label4.Text = "Misses";
+            this.label4.Visible = false;
+            // 
+            // gbS3
+            // 
+            this.gbS3.Controls.Add(this.groupBox12);
+            this.gbS3.Controls.Add(this.groupBox11);
+            this.gbS3.Controls.Add(this.groupBox13);
+            this.gbS3.Location = new System.Drawing.Point(669, 418);
+            this.gbS3.Name = "gbS3";
+            this.gbS3.Size = new System.Drawing.Size(119, 116);
+            this.gbS3.TabIndex = 68;
+            this.gbS3.TabStop = false;
+            this.gbS3.Text = "groupBox1";
+            this.gbS3.Visible = false;
+            // 
+            // groupBox11
+            // 
+            this.groupBox11.Controls.Add(this.rBtnLow2S2);
+            this.groupBox11.Controls.Add(this.rBtnLow1S2);
+            this.groupBox11.Location = new System.Drawing.Point(0, 0);
+            this.groupBox11.Name = "groupBox11";
+            this.groupBox11.Size = new System.Drawing.Size(109, 41);
+            this.groupBox11.TabIndex = 64;
+            this.groupBox11.TabStop = false;
+            // 
+            // rBtnLow2S2
+            // 
+            this.rBtnLow2S2.AutoSize = true;
+            this.rBtnLow2S2.Location = new System.Drawing.Point(1, 18);
+            this.rBtnLow2S2.Name = "rBtnLow2S2";
+            this.rBtnLow2S2.Size = new System.Drawing.Size(97, 17);
+            this.rBtnLow2S2.TabIndex = 64;
+            this.rBtnLow2S2.TabStop = true;
+            this.rBtnLow2S2.Text = "Low (2 Scored)";
+            this.rBtnLow2S2.UseVisualStyleBackColor = true;
+            this.rBtnLow2S2.CheckedChanged += new System.EventHandler(this.rBtnLow2S2_CheckedChanged);
+            // 
+            // rBtnLow1S2
+            // 
+            this.rBtnLow1S2.AutoSize = true;
+            this.rBtnLow1S2.Location = new System.Drawing.Point(1, 0);
+            this.rBtnLow1S2.Name = "rBtnLow1S2";
+            this.rBtnLow1S2.Size = new System.Drawing.Size(97, 17);
+            this.rBtnLow1S2.TabIndex = 63;
+            this.rBtnLow1S2.TabStop = true;
+            this.rBtnLow1S2.Text = "Low (1 Scored)";
+            this.rBtnLow1S2.UseVisualStyleBackColor = true;
+            this.rBtnLow1S2.CheckedChanged += new System.EventHandler(this.rBtnLow1S2_CheckedChanged);
+            // 
+            // groupBox12
+            // 
+            this.groupBox12.Controls.Add(this.rBtnHigh2S2);
+            this.groupBox12.Controls.Add(this.rBtnHigh1S2);
+            this.groupBox12.Location = new System.Drawing.Point(0, 72);
+            this.groupBox12.Name = "groupBox12";
+            this.groupBox12.Size = new System.Drawing.Size(109, 41);
+            this.groupBox12.TabIndex = 66;
+            this.groupBox12.TabStop = false;
+            // 
+            // rBtnHigh2S2
+            // 
+            this.rBtnHigh2S2.AutoSize = true;
+            this.rBtnHigh2S2.Location = new System.Drawing.Point(1, 26);
+            this.rBtnHigh2S2.Name = "rBtnHigh2S2";
+            this.rBtnHigh2S2.Size = new System.Drawing.Size(99, 17);
+            this.rBtnHigh2S2.TabIndex = 64;
+            this.rBtnHigh2S2.TabStop = true;
+            this.rBtnHigh2S2.Text = "High (2 Scored)";
+            this.rBtnHigh2S2.UseVisualStyleBackColor = true;
+            this.rBtnHigh2S2.CheckedChanged += new System.EventHandler(this.rBtnHigh2S2_CheckedChanged);
+            // 
+            // rBtnHigh1S2
+            // 
+            this.rBtnHigh1S2.AutoSize = true;
+            this.rBtnHigh1S2.Location = new System.Drawing.Point(1, 10);
+            this.rBtnHigh1S2.Name = "rBtnHigh1S2";
+            this.rBtnHigh1S2.Size = new System.Drawing.Size(99, 17);
+            this.rBtnHigh1S2.TabIndex = 63;
+            this.rBtnHigh1S2.TabStop = true;
+            this.rBtnHigh1S2.Text = "High (1 Scored)";
+            this.rBtnHigh1S2.UseVisualStyleBackColor = true;
+            this.rBtnHigh1S2.CheckedChanged += new System.EventHandler(this.rBtnHigh1S2_CheckedChanged);
+            // 
+            // groupBox13
+            // 
+            this.groupBox13.Controls.Add(this.rBtnMed2S2);
+            this.groupBox13.Controls.Add(this.rBtnMed1S2);
+            this.groupBox13.Location = new System.Drawing.Point(0, 35);
+            this.groupBox13.Name = "groupBox13";
+            this.groupBox13.Size = new System.Drawing.Size(109, 41);
+            this.groupBox13.TabIndex = 65;
+            this.groupBox13.TabStop = false;
+            // 
+            // rBtnMed2S2
+            // 
+            this.rBtnMed2S2.AutoSize = true;
+            this.rBtnMed2S2.Location = new System.Drawing.Point(1, 22);
+            this.rBtnMed2S2.Name = "rBtnMed2S2";
+            this.rBtnMed2S2.Size = new System.Drawing.Size(114, 17);
+            this.rBtnMed2S2.TabIndex = 64;
+            this.rBtnMed2S2.TabStop = true;
+            this.rBtnMed2S2.Text = "Medium (2 Scored)";
+            this.rBtnMed2S2.UseVisualStyleBackColor = true;
+            this.rBtnMed2S2.CheckedChanged += new System.EventHandler(this.rBtnMed2S2_CheckedChanged);
+            // 
+            // rBtnMed1S2
+            // 
+            this.rBtnMed1S2.AutoSize = true;
+            this.rBtnMed1S2.Location = new System.Drawing.Point(1, 4);
+            this.rBtnMed1S2.Name = "rBtnMed1S2";
+            this.rBtnMed1S2.Size = new System.Drawing.Size(114, 17);
+            this.rBtnMed1S2.TabIndex = 63;
+            this.rBtnMed1S2.TabStop = true;
+            this.rBtnMed1S2.Text = "Medium (1 Scored)";
+            this.rBtnMed1S2.UseVisualStyleBackColor = true;
+            this.rBtnMed1S2.CheckedChanged += new System.EventHandler(this.rBtnMed1S2_CheckedChanged);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.label11.Location = new System.Drawing.Point(677, 387);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(101, 24);
+            this.label11.TabIndex = 70;
+            this.label11.Text = "Successful";
+            // 
+            // gbS4
+            // 
+            this.gbS4.Controls.Add(this.cBoxMedHatchB2);
+            this.gbS4.Controls.Add(this.cBoxHighHatchB2);
+            this.gbS4.Controls.Add(this.cBoxLowHatchB2);
+            this.gbS4.Controls.Add(this.cBoxHighHatchA2);
+            this.gbS4.Controls.Add(this.cBoxMedHatchA2);
+            this.gbS4.Controls.Add(this.cBoxLowHatchA2);
+            this.gbS4.Location = new System.Drawing.Point(310, 387);
+            this.gbS4.Name = "gbS4";
+            this.gbS4.Size = new System.Drawing.Size(99, 119);
+            this.gbS4.TabIndex = 69;
+            this.gbS4.TabStop = false;
+            this.gbS4.Visible = false;
+            // 
+            // cBoxMedHatchB2
+            // 
+            this.cBoxMedHatchB2.AutoSize = true;
+            this.cBoxMedHatchB2.Location = new System.Drawing.Point(2, 73);
+            this.cBoxMedHatchB2.Name = "cBoxMedHatchB2";
+            this.cBoxMedHatchB2.Size = new System.Drawing.Size(79, 17);
+            this.cBoxMedHatchB2.TabIndex = 5;
+            this.cBoxMedHatchB2.Text = "Medium (B)";
+            this.cBoxMedHatchB2.UseVisualStyleBackColor = true;
+            this.cBoxMedHatchB2.CheckedChanged += new System.EventHandler(this.cBoxMedHatchB2_CheckedChanged);
+            // 
+            // cBoxHighHatchB2
+            // 
+            this.cBoxHighHatchB2.AutoSize = true;
+            this.cBoxHighHatchB2.Location = new System.Drawing.Point(2, 90);
+            this.cBoxHighHatchB2.Name = "cBoxHighHatchB2";
+            this.cBoxHighHatchB2.Size = new System.Drawing.Size(64, 17);
+            this.cBoxHighHatchB2.TabIndex = 4;
+            this.cBoxHighHatchB2.Text = "High (B)";
+            this.cBoxHighHatchB2.UseVisualStyleBackColor = true;
+            this.cBoxHighHatchB2.CheckedChanged += new System.EventHandler(this.cBoxHighHatchB2_CheckedChanged);
+            // 
+            // cBoxLowHatchB2
+            // 
+            this.cBoxLowHatchB2.AutoSize = true;
+            this.cBoxLowHatchB2.Location = new System.Drawing.Point(2, 56);
+            this.cBoxLowHatchB2.Name = "cBoxLowHatchB2";
+            this.cBoxLowHatchB2.Size = new System.Drawing.Size(62, 17);
+            this.cBoxLowHatchB2.TabIndex = 3;
+            this.cBoxLowHatchB2.Text = "Low (B)";
+            this.cBoxLowHatchB2.UseVisualStyleBackColor = true;
+            this.cBoxLowHatchB2.CheckedChanged += new System.EventHandler(this.cBoxLowHatchB2_CheckedChanged);
+            // 
+            // cBoxHighHatchA2
+            // 
+            this.cBoxHighHatchA2.AutoSize = true;
+            this.cBoxHighHatchA2.Location = new System.Drawing.Point(2, 39);
+            this.cBoxHighHatchA2.Name = "cBoxHighHatchA2";
+            this.cBoxHighHatchA2.Size = new System.Drawing.Size(64, 17);
+            this.cBoxHighHatchA2.TabIndex = 2;
+            this.cBoxHighHatchA2.Text = "High (A)";
+            this.cBoxHighHatchA2.UseVisualStyleBackColor = true;
+            this.cBoxHighHatchA2.CheckedChanged += new System.EventHandler(this.cBoxHighHatchA2_CheckedChanged);
+            // 
+            // cBoxMedHatchA2
+            // 
+            this.cBoxMedHatchA2.AutoSize = true;
+            this.cBoxMedHatchA2.Location = new System.Drawing.Point(2, 23);
+            this.cBoxMedHatchA2.Name = "cBoxMedHatchA2";
+            this.cBoxMedHatchA2.Size = new System.Drawing.Size(79, 17);
+            this.cBoxMedHatchA2.TabIndex = 1;
+            this.cBoxMedHatchA2.Text = "Medium (A)";
+            this.cBoxMedHatchA2.UseVisualStyleBackColor = true;
+            this.cBoxMedHatchA2.CheckedChanged += new System.EventHandler(this.cBoxMedHatchA2_CheckedChanged);
+            // 
+            // cBoxLowHatchA2
+            // 
+            this.cBoxLowHatchA2.AutoSize = true;
+            this.cBoxLowHatchA2.Location = new System.Drawing.Point(2, 7);
+            this.cBoxLowHatchA2.Name = "cBoxLowHatchA2";
+            this.cBoxLowHatchA2.Size = new System.Drawing.Size(62, 17);
+            this.cBoxLowHatchA2.TabIndex = 0;
+            this.cBoxLowHatchA2.Text = "Low (A)";
+            this.cBoxLowHatchA2.UseVisualStyleBackColor = true;
+            this.cBoxLowHatchA2.CheckedChanged += new System.EventHandler(this.cBoxLowHatchA2_CheckedChanged);
             // 
             // gb
             // 
@@ -655,13 +1077,16 @@
             this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.FRC_Field;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(800, 618);
-            this.Controls.Add(this.cBoxSuccessfulCargo);
+            this.Controls.Add(this.gbS4);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.gbS2);
+            this.Controls.Add(this.gbS3);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.gbS);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.cBoxHatchesSuccessful);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.lblAttempted2);
             this.Controls.Add(this.btnAdd2);
             this.Controls.Add(this.btnMinus2);
@@ -699,6 +1124,24 @@
             this.groupBox5.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox8.PerformLayout();
+            this.groupBox9.ResumeLayout(false);
+            this.groupBox9.PerformLayout();
+            this.gbS.ResumeLayout(false);
+            this.gbS2.ResumeLayout(false);
+            this.gbS2.PerformLayout();
+            this.gbS3.ResumeLayout(false);
+            this.groupBox11.ResumeLayout(false);
+            this.groupBox11.PerformLayout();
+            this.groupBox12.ResumeLayout(false);
+            this.groupBox12.PerformLayout();
+            this.groupBox13.ResumeLayout(false);
+            this.groupBox13.PerformLayout();
+            this.gbS4.ResumeLayout(false);
+            this.gbS4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -735,7 +1178,6 @@
         private System.Windows.Forms.Button btnMinus2;
         private System.Windows.Forms.Button btnAdd2;
         private System.Windows.Forms.Label lblAttempted2;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.RadioButton rBtnLowLow;
         private System.Windows.Forms.RadioButton rBtnMediumLow;
@@ -750,8 +1192,42 @@
         private System.Windows.Forms.RadioButton radioButton5;
         private System.Windows.Forms.RadioButton radioButton6;
         private System.Windows.Forms.RadioButton radioButton7;
-        private System.Windows.Forms.CheckedListBox cBoxHatchesSuccessful;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.CheckedListBox cBoxSuccessfulCargo;
+        private System.Windows.Forms.RadioButton rBtnLow1S;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.RadioButton rBtnLow2S;
+        private System.Windows.Forms.GroupBox groupBox8;
+        private System.Windows.Forms.RadioButton rBtnMed2S;
+        private System.Windows.Forms.RadioButton rBtnMed1S;
+        private System.Windows.Forms.GroupBox groupBox9;
+        private System.Windows.Forms.RadioButton rBtnHigh2S;
+        private System.Windows.Forms.RadioButton rBtnHigh1S;
+        private System.Windows.Forms.GroupBox gbS;
+        private System.Windows.Forms.GroupBox gbS2;
+        private System.Windows.Forms.CheckBox cBoxMedHatchB;
+        private System.Windows.Forms.CheckBox cBoxHighHatchB;
+        private System.Windows.Forms.CheckBox cBoxLowHatchB;
+        private System.Windows.Forms.CheckBox cBoxHighHatchA;
+        private System.Windows.Forms.CheckBox cBoxMedHatchA;
+        private System.Windows.Forms.CheckBox cBoxLowHatchA;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.GroupBox gbS3;
+        private System.Windows.Forms.GroupBox groupBox11;
+        private System.Windows.Forms.RadioButton rBtnLow2S2;
+        private System.Windows.Forms.RadioButton rBtnLow1S2;
+        private System.Windows.Forms.GroupBox groupBox12;
+        private System.Windows.Forms.RadioButton rBtnHigh2S2;
+        private System.Windows.Forms.RadioButton rBtnHigh1S2;
+        private System.Windows.Forms.GroupBox groupBox13;
+        private System.Windows.Forms.RadioButton rBtnMed2S2;
+        private System.Windows.Forms.RadioButton rBtnMed1S2;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.GroupBox gbS4;
+        private System.Windows.Forms.CheckBox cBoxMedHatchB2;
+        private System.Windows.Forms.CheckBox cBoxHighHatchB2;
+        private System.Windows.Forms.CheckBox cBoxLowHatchB2;
+        private System.Windows.Forms.CheckBox cBoxHighHatchA2;
+        private System.Windows.Forms.CheckBox cBoxMedHatchA2;
+        private System.Windows.Forms.CheckBox cBoxLowHatchA2;
     }
 }
