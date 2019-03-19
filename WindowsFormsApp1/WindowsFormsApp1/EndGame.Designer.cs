@@ -43,7 +43,7 @@
             // 
             // BtnNextScreen
             // 
-            this.BtnNextScreen.Location = new System.Drawing.Point(55, 391);
+            this.BtnNextScreen.Location = new System.Drawing.Point(679, 382);
             this.BtnNextScreen.Name = "BtnNextScreen";
             this.BtnNextScreen.Size = new System.Drawing.Size(115, 56);
             this.BtnNextScreen.TabIndex = 1;
@@ -56,7 +56,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.FRC_Field;
-            this.ClientSize = new System.Drawing.Size(770, 450);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.BtnNextScreen);
             this.Controls.Add(this.cBoxDidGetBackOnPlatform);
             this.Name = "EndGame";

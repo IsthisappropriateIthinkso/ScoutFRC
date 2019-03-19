@@ -104,7 +104,7 @@
             // 
             this.BtnContinue.Location = new System.Drawing.Point(725, 402);
             this.BtnContinue.Name = "BtnContinue";
-            this.BtnContinue.Size = new System.Drawing.Size(58, 38);
+            this.BtnContinue.Size = new System.Drawing.Size(107, 38);
             this.BtnContinue.TabIndex = 10;
             this.BtnContinue.Text = "Next Screen";
             this.BtnContinue.UseVisualStyleBackColor = true;
