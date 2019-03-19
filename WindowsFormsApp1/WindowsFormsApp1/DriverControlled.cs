@@ -130,18 +130,18 @@ namespace WindowsFormsApp1
             {
                 if (rBtnLowTop.Checked == true)
                 {
-                    lblAttempted.Text = "" + valuesDC.cargoLow;
                     valuesDC.cargoLow = valuesDC.cargoLow - 1;
+                    lblAttempted.Text = "" + valuesDC.cargoLow;
                 }
                 else if (rBtnMediumTop.Checked == true)
                 {
-                     lblAttempted.Text = "" + valuesDC.cargoMed;
                     valuesDC.cargoMed = valuesDC.cargoMed - 1;
+                    lblAttempted.Text = "" + valuesDC.cargoMed;
                 }
                 else if (rBtnHighTop.Checked == true)
                 {
+                    valuesDC.cargoHigh = valuesDC.cargoHigh - 1;
                     lblAttempted.Text = "" + valuesDC.cargoHigh;
-                    valuesDC.cargoHigh = valuesDC.cargoHigh - 1;                    
                 }
             }
             if (radioButton1.Checked == true)
@@ -151,37 +151,38 @@ namespace WindowsFormsApp1
                     if (rBtnLowTop.Checked == true)
                     {
 
-                        lblAttempted.Text = "" + valuesDC.sideALow;
                         valuesDC.sideALow = valuesDC.sideALow - 1;
-                        
+                        lblAttempted.Text = "" + valuesDC.sideALow;
+
                     }
                     else if (rBtnMediumTop.Checked == true)
                     {
-                        lblAttempted.Text = "" + valuesDC.sideAMed;
                         valuesDC.sideAMed = valuesDC.sideAMed - 1;
+                        lblAttempted.Text = "" + valuesDC.sideAMed;
                     }
                     else if (rBtnHighTop.Checked == true)
                     {
-                        lblAttempted.Text = "" + valuesDC.sideAHigh;
                         valuesDC.sideAHigh = valuesDC.sideAHigh - 1;
+                        lblAttempted.Text = "" + valuesDC.sideAHigh;
                     }
                 }
                 else if (btnBTop.Checked == true)
                 {
                     if (rBtnLowTop.Checked == true)
                     {
-                        lblAttempted.Text = "" + valuesDC.sideBLow;
                         valuesDC.sideBLow = valuesDC.sideBLow - 1;
+                        lblAttempted.Text = "" + valuesDC.sideBLow;
                     }
                     else if (rBtnMediumTop.Checked == true)
                     {
-                        lblAttempted.Text = "" + valuesDC.sideBMed;
                         valuesDC.sideBMed = valuesDC.sideBMed - 1;
+                        lblAttempted.Text = "" + valuesDC.sideBMed;
                     }
                     else if (rBtnHighTop.Checked == true)
                     {
-                        lblAttempted.Text = "" + valuesDC.sideBHigh;
                         valuesDC.sideBHigh = valuesDC.sideBHigh - 1;
+                        lblAttempted.Text = "" + valuesDC.sideBHigh;
+
                     }
                 }
             }
