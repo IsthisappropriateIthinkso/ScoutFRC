@@ -91,12 +91,12 @@
             this.cBoxLowHatchA = new System.Windows.Forms.CheckBox();
             this.label4 = new System.Windows.Forms.Label();
             this.gbS3 = new System.Windows.Forms.GroupBox();
-            this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.rBtnLow2S2 = new System.Windows.Forms.RadioButton();
-            this.rBtnLow1S2 = new System.Windows.Forms.RadioButton();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
             this.rBtnHigh2S2 = new System.Windows.Forms.RadioButton();
             this.rBtnHigh1S2 = new System.Windows.Forms.RadioButton();
+            this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.rBtnLow2S2 = new System.Windows.Forms.RadioButton();
+            this.rBtnLow1S2 = new System.Windows.Forms.RadioButton();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
             this.rBtnMed2S2 = new System.Windows.Forms.RadioButton();
             this.rBtnMed1S2 = new System.Windows.Forms.RadioButton();
@@ -122,8 +122,8 @@
             this.gbS.SuspendLayout();
             this.gbS2.SuspendLayout();
             this.gbS3.SuspendLayout();
-            this.groupBox11.SuspendLayout();
             this.groupBox12.SuspendLayout();
+            this.groupBox11.SuspendLayout();
             this.groupBox13.SuspendLayout();
             this.gbS4.SuspendLayout();
             this.SuspendLayout();
@@ -776,12 +776,13 @@
             this.gbS2.Controls.Add(this.cBoxHighHatchA);
             this.gbS2.Controls.Add(this.cBoxMedHatchA);
             this.gbS2.Controls.Add(this.cBoxLowHatchA);
-            this.gbS2.Location = new System.Drawing.Point(279, 89);
+            this.gbS2.Location = new System.Drawing.Point(679, 133);
             this.gbS2.Name = "gbS2";
             this.gbS2.Size = new System.Drawing.Size(99, 119);
             this.gbS2.TabIndex = 68;
             this.gbS2.TabStop = false;
             this.gbS2.Visible = false;
+            this.gbS2.Enter += new System.EventHandler(this.gbS2_Enter);
             // 
             // cBoxMedHatchB
             // 
@@ -875,40 +876,6 @@
             this.gbS3.Text = "groupBox1";
             this.gbS3.Visible = false;
             // 
-            // groupBox11
-            // 
-            this.groupBox11.Controls.Add(this.rBtnLow2S2);
-            this.groupBox11.Controls.Add(this.rBtnLow1S2);
-            this.groupBox11.Location = new System.Drawing.Point(0, 0);
-            this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(109, 41);
-            this.groupBox11.TabIndex = 64;
-            this.groupBox11.TabStop = false;
-            // 
-            // rBtnLow2S2
-            // 
-            this.rBtnLow2S2.AutoSize = true;
-            this.rBtnLow2S2.Location = new System.Drawing.Point(1, 18);
-            this.rBtnLow2S2.Name = "rBtnLow2S2";
-            this.rBtnLow2S2.Size = new System.Drawing.Size(97, 17);
-            this.rBtnLow2S2.TabIndex = 64;
-            this.rBtnLow2S2.TabStop = true;
-            this.rBtnLow2S2.Text = "Low (2 Scored)";
-            this.rBtnLow2S2.UseVisualStyleBackColor = true;
-            this.rBtnLow2S2.CheckedChanged += new System.EventHandler(this.rBtnLow2S2_CheckedChanged);
-            // 
-            // rBtnLow1S2
-            // 
-            this.rBtnLow1S2.AutoSize = true;
-            this.rBtnLow1S2.Location = new System.Drawing.Point(1, 0);
-            this.rBtnLow1S2.Name = "rBtnLow1S2";
-            this.rBtnLow1S2.Size = new System.Drawing.Size(97, 17);
-            this.rBtnLow1S2.TabIndex = 63;
-            this.rBtnLow1S2.TabStop = true;
-            this.rBtnLow1S2.Text = "Low (1 Scored)";
-            this.rBtnLow1S2.UseVisualStyleBackColor = true;
-            this.rBtnLow1S2.CheckedChanged += new System.EventHandler(this.rBtnLow1S2_CheckedChanged);
-            // 
             // groupBox12
             // 
             this.groupBox12.Controls.Add(this.rBtnHigh2S2);
@@ -942,6 +909,40 @@
             this.rBtnHigh1S2.Text = "High (1 Scored)";
             this.rBtnHigh1S2.UseVisualStyleBackColor = true;
             this.rBtnHigh1S2.CheckedChanged += new System.EventHandler(this.rBtnHigh1S2_CheckedChanged);
+            // 
+            // groupBox11
+            // 
+            this.groupBox11.Controls.Add(this.rBtnLow2S2);
+            this.groupBox11.Controls.Add(this.rBtnLow1S2);
+            this.groupBox11.Location = new System.Drawing.Point(0, 0);
+            this.groupBox11.Name = "groupBox11";
+            this.groupBox11.Size = new System.Drawing.Size(109, 41);
+            this.groupBox11.TabIndex = 64;
+            this.groupBox11.TabStop = false;
+            // 
+            // rBtnLow2S2
+            // 
+            this.rBtnLow2S2.AutoSize = true;
+            this.rBtnLow2S2.Location = new System.Drawing.Point(1, 18);
+            this.rBtnLow2S2.Name = "rBtnLow2S2";
+            this.rBtnLow2S2.Size = new System.Drawing.Size(97, 17);
+            this.rBtnLow2S2.TabIndex = 64;
+            this.rBtnLow2S2.TabStop = true;
+            this.rBtnLow2S2.Text = "Low (2 Scored)";
+            this.rBtnLow2S2.UseVisualStyleBackColor = true;
+            this.rBtnLow2S2.CheckedChanged += new System.EventHandler(this.rBtnLow2S2_CheckedChanged);
+            // 
+            // rBtnLow1S2
+            // 
+            this.rBtnLow1S2.AutoSize = true;
+            this.rBtnLow1S2.Location = new System.Drawing.Point(1, 0);
+            this.rBtnLow1S2.Name = "rBtnLow1S2";
+            this.rBtnLow1S2.Size = new System.Drawing.Size(97, 17);
+            this.rBtnLow1S2.TabIndex = 63;
+            this.rBtnLow1S2.TabStop = true;
+            this.rBtnLow1S2.Text = "Low (1 Scored)";
+            this.rBtnLow1S2.UseVisualStyleBackColor = true;
+            this.rBtnLow1S2.CheckedChanged += new System.EventHandler(this.rBtnLow1S2_CheckedChanged);
             // 
             // groupBox13
             // 
@@ -997,7 +998,7 @@
             this.gbS4.Controls.Add(this.cBoxHighHatchA2);
             this.gbS4.Controls.Add(this.cBoxMedHatchA2);
             this.gbS4.Controls.Add(this.cBoxLowHatchA2);
-            this.gbS4.Location = new System.Drawing.Point(310, 387);
+            this.gbS4.Location = new System.Drawing.Point(679, 418);
             this.gbS4.Name = "gbS4";
             this.gbS4.Size = new System.Drawing.Size(99, 119);
             this.gbS4.TabIndex = 69;
@@ -1134,10 +1135,10 @@
             this.gbS2.ResumeLayout(false);
             this.gbS2.PerformLayout();
             this.gbS3.ResumeLayout(false);
-            this.groupBox11.ResumeLayout(false);
-            this.groupBox11.PerformLayout();
             this.groupBox12.ResumeLayout(false);
             this.groupBox12.PerformLayout();
+            this.groupBox11.ResumeLayout(false);
+            this.groupBox11.PerformLayout();
             this.groupBox13.ResumeLayout(false);
             this.groupBox13.PerformLayout();
             this.gbS4.ResumeLayout(false);

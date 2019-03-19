@@ -18,6 +18,7 @@ namespace WindowsFormsApp1
             int totalHatches = 0;
             int totalHatches2 = 0;
 
+
             if (WindowsFormsApp1.gb.valuesDC.sideALowS == true)
             {
                 totalHatches = totalHatches + 1;
@@ -68,13 +69,19 @@ namespace WindowsFormsApp1
                 totalHatches2 = totalHatches2 + 1;
             }
 
+            int totalCargoMissed = WindowsFormsApp1.gb.valuesDC.cargoHigh + WindowsFormsApp1.gb.valuesDC.cargoMed + WindowsFormsApp1.gb.valuesDC.cargoLow;
+            int totalCargoMissed2 = WindowsFormsApp1.gb.valuesDC.cargoHigh2 + WindowsFormsApp1.gb.valuesDC.cargoMed2 + WindowsFormsApp1.gb.valuesDC.cargoLow2;
+            int totalHatchesMissed = WindowsFormsApp1.gb.valuesDC.sideALow + WindowsFormsApp1.gb.valuesDC.sideAMed + WindowsFormsApp1.gb.valuesDC.sideAHigh + WindowsFormsApp1.gb.valuesDC.sideBLow + WindowsFormsApp1.gb.valuesDC.sideBMed + WindowsFormsApp1.gb.valuesDC.sideBHigh;
+            int totalHatchesMissed2 = 0;
             int totalCargo = WindowsFormsApp1.gb.valuesDC.cargoHighS + WindowsFormsApp1.gb.valuesDC.cargoMedS + WindowsFormsApp1.gb.valuesDC.cargoLowS;
-            lblCargoTotal.Text = "Rocket 1 cargo: " + totalCargo;
-            lblHatchesTotal.Text = "Rocket 1 hatches: " + totalHatches;
-
             int totalCargo2 = WindowsFormsApp1.gb.valuesDC.cargoHighS2 + WindowsFormsApp1.gb.valuesDC.cargoMedS2 + WindowsFormsApp1.gb.valuesDC.cargoLowS2;
-            lblCargoTotal2.Text = "Rocket 2 cargo: " + totalCargo2;
-            lblHatchesTotal2.Text = "Rocket 2 hatches: " + totalHatches2;
+
+            lblCargoTotal.Text = "Cargo: " + totalCargo + "       Misses: " + totalCargoMissed;
+            lblHatchesTotal.Text = "Hatches: " + totalHatches + "       Misses: " + totalHatchesMissed;
+            lblCargoTotal2.Text = "Cargo: " + totalCargo2 + "       Misses: " + totalCargoMissed2;
+            lblHatchesTotal2.Text = "Hatches: " + totalHatches2;
+
+            
         }
 
         private void BtnNextMatch_Click(object sender, EventArgs e)
@@ -90,6 +97,11 @@ namespace WindowsFormsApp1
         }
 
         private void lblCargoHigh_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblHatchesTotal_Click(object sender, EventArgs e)
         {
 
         }

@@ -631,6 +631,7 @@ namespace WindowsFormsApp1
             groupBox7.Visible = false;
             groupBox8.Visible = false;
             groupBox9.Visible = false;
+            label11.Visible = false;
         }
 
         private void cBoxHatch_CheckedChanged(object sender, EventArgs e)
@@ -933,6 +934,11 @@ namespace WindowsFormsApp1
             {
                 valuesDC.sideBLowS2 = false;
             }
+        }
+
+        private void gbS2_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }
