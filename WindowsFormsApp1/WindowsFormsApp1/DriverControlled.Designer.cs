@@ -108,6 +108,14 @@
             this.cBoxHighHatchA2 = new System.Windows.Forms.CheckBox();
             this.cBoxMedHatchA2 = new System.Windows.Forms.CheckBox();
             this.cBoxLowHatchA2 = new System.Windows.Forms.CheckBox();
+            this.cBoxShuttle1 = new System.Windows.Forms.CheckBox();
+            this.cBoxShuttle5 = new System.Windows.Forms.CheckBox();
+            this.cBoxShuttle2 = new System.Windows.Forms.CheckBox();
+            this.cBoxShuttle8 = new System.Windows.Forms.CheckBox();
+            this.cBoxShuttle7 = new System.Windows.Forms.CheckBox();
+            this.cBoxShuttle6 = new System.Windows.Forms.CheckBox();
+            this.cBoxShuttle4 = new System.Windows.Forms.CheckBox();
+            this.cBoxShuttle3 = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.gbHeightTop.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -301,17 +309,17 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.label8.Location = new System.Drawing.Point(307, 7);
+            this.label8.Location = new System.Drawing.Point(413, 7);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(163, 16);
+            this.label8.Size = new System.Drawing.Size(284, 16);
             this.label8.TabIndex = 49;
-            this.label8.Text = "Choose a side and height.";
+            this.label8.Text = "Choose a side and height of a rocket or shuttle.";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(307, 23);
+            this.label9.Location = new System.Drawing.Point(413, 23);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(308, 16);
             this.label9.TabIndex = 50;
@@ -320,10 +328,10 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(12, 5);
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(12, 6);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(295, 39);
+            this.label10.Size = new System.Drawing.Size(401, 55);
             this.label10.TabIndex = 51;
             this.label10.Text = "Driver Controlled";
             // 
@@ -989,6 +997,7 @@
             this.label11.Size = new System.Drawing.Size(101, 24);
             this.label11.TabIndex = 70;
             this.label11.Text = "Successful";
+            this.label11.Visible = false;
             // 
             // gbS4
             // 
@@ -1071,6 +1080,94 @@
             this.cBoxLowHatchA2.UseVisualStyleBackColor = true;
             this.cBoxLowHatchA2.CheckedChanged += new System.EventHandler(this.cBoxLowHatchA2_CheckedChanged);
             // 
+            // cBoxShuttle1
+            // 
+            this.cBoxShuttle1.AutoSize = true;
+            this.cBoxShuttle1.Location = new System.Drawing.Point(499, 282);
+            this.cBoxShuttle1.Name = "cBoxShuttle1";
+            this.cBoxShuttle1.Size = new System.Drawing.Size(55, 17);
+            this.cBoxShuttle1.TabIndex = 71;
+            this.cBoxShuttle1.Text = "Hatch";
+            this.cBoxShuttle1.UseVisualStyleBackColor = true;
+            this.cBoxShuttle1.Visible = false;
+            // 
+            // cBoxShuttle5
+            // 
+            this.cBoxShuttle5.AutoSize = true;
+            this.cBoxShuttle5.Location = new System.Drawing.Point(499, 313);
+            this.cBoxShuttle5.Name = "cBoxShuttle5";
+            this.cBoxShuttle5.Size = new System.Drawing.Size(55, 17);
+            this.cBoxShuttle5.TabIndex = 72;
+            this.cBoxShuttle5.Text = "Hatch";
+            this.cBoxShuttle5.UseVisualStyleBackColor = true;
+            this.cBoxShuttle5.Visible = false;
+            // 
+            // cBoxShuttle2
+            // 
+            this.cBoxShuttle2.AutoSize = true;
+            this.cBoxShuttle2.Location = new System.Drawing.Point(604, 216);
+            this.cBoxShuttle2.Name = "cBoxShuttle2";
+            this.cBoxShuttle2.Size = new System.Drawing.Size(55, 17);
+            this.cBoxShuttle2.TabIndex = 73;
+            this.cBoxShuttle2.Text = "Hatch";
+            this.cBoxShuttle2.UseVisualStyleBackColor = true;
+            this.cBoxShuttle2.Visible = false;
+            // 
+            // cBoxShuttle8
+            // 
+            this.cBoxShuttle8.AutoSize = true;
+            this.cBoxShuttle8.Location = new System.Drawing.Point(714, 377);
+            this.cBoxShuttle8.Name = "cBoxShuttle8";
+            this.cBoxShuttle8.Size = new System.Drawing.Size(55, 17);
+            this.cBoxShuttle8.TabIndex = 74;
+            this.cBoxShuttle8.Text = "Hatch";
+            this.cBoxShuttle8.UseVisualStyleBackColor = true;
+            this.cBoxShuttle8.Visible = false;
+            // 
+            // cBoxShuttle7
+            // 
+            this.cBoxShuttle7.AutoSize = true;
+            this.cBoxShuttle7.Location = new System.Drawing.Point(659, 377);
+            this.cBoxShuttle7.Name = "cBoxShuttle7";
+            this.cBoxShuttle7.Size = new System.Drawing.Size(55, 17);
+            this.cBoxShuttle7.TabIndex = 75;
+            this.cBoxShuttle7.Text = "Hatch";
+            this.cBoxShuttle7.UseVisualStyleBackColor = true;
+            this.cBoxShuttle7.Visible = false;
+            // 
+            // cBoxShuttle6
+            // 
+            this.cBoxShuttle6.AutoSize = true;
+            this.cBoxShuttle6.Location = new System.Drawing.Point(604, 377);
+            this.cBoxShuttle6.Name = "cBoxShuttle6";
+            this.cBoxShuttle6.Size = new System.Drawing.Size(55, 17);
+            this.cBoxShuttle6.TabIndex = 76;
+            this.cBoxShuttle6.Text = "Hatch";
+            this.cBoxShuttle6.UseVisualStyleBackColor = true;
+            this.cBoxShuttle6.Visible = false;
+            // 
+            // cBoxShuttle4
+            // 
+            this.cBoxShuttle4.AutoSize = true;
+            this.cBoxShuttle4.Location = new System.Drawing.Point(714, 216);
+            this.cBoxShuttle4.Name = "cBoxShuttle4";
+            this.cBoxShuttle4.Size = new System.Drawing.Size(55, 17);
+            this.cBoxShuttle4.TabIndex = 77;
+            this.cBoxShuttle4.Text = "Hatch";
+            this.cBoxShuttle4.UseVisualStyleBackColor = true;
+            this.cBoxShuttle4.Visible = false;
+            // 
+            // cBoxShuttle3
+            // 
+            this.cBoxShuttle3.AutoSize = true;
+            this.cBoxShuttle3.Location = new System.Drawing.Point(659, 216);
+            this.cBoxShuttle3.Name = "cBoxShuttle3";
+            this.cBoxShuttle3.Size = new System.Drawing.Size(55, 17);
+            this.cBoxShuttle3.TabIndex = 78;
+            this.cBoxShuttle3.Text = "Hatch";
+            this.cBoxShuttle3.UseVisualStyleBackColor = true;
+            this.cBoxShuttle3.Visible = false;
+            // 
             // gb
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1078,6 +1175,14 @@
             this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.FRC_Field;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(800, 618);
+            this.Controls.Add(this.cBoxShuttle3);
+            this.Controls.Add(this.cBoxShuttle4);
+            this.Controls.Add(this.cBoxShuttle6);
+            this.Controls.Add(this.cBoxShuttle7);
+            this.Controls.Add(this.cBoxShuttle8);
+            this.Controls.Add(this.cBoxShuttle2);
+            this.Controls.Add(this.cBoxShuttle5);
+            this.Controls.Add(this.cBoxShuttle1);
             this.Controls.Add(this.gbS4);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.gbS2);
@@ -1230,5 +1335,13 @@
         private System.Windows.Forms.CheckBox cBoxHighHatchA2;
         private System.Windows.Forms.CheckBox cBoxMedHatchA2;
         private System.Windows.Forms.CheckBox cBoxLowHatchA2;
+        private System.Windows.Forms.CheckBox cBoxShuttle1;
+        private System.Windows.Forms.CheckBox cBoxShuttle5;
+        private System.Windows.Forms.CheckBox cBoxShuttle2;
+        private System.Windows.Forms.CheckBox cBoxShuttle8;
+        private System.Windows.Forms.CheckBox cBoxShuttle7;
+        private System.Windows.Forms.CheckBox cBoxShuttle6;
+        private System.Windows.Forms.CheckBox cBoxShuttle4;
+        private System.Windows.Forms.CheckBox cBoxShuttle3;
     }
 }
