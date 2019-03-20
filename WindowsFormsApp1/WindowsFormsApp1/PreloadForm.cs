@@ -16,94 +16,66 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
 
-        }
+            groupBox1.Visible = false;
+            groupBox2.Visible = true;
 
-        private void PreloadForm_Load(object sender, EventArgs e)
-        {
-            groupBox1.Visible = true;
-            label1.Visible = true;
-            label2.Visible = true;
-            label3.Visible = true;
+
+            rBtn1.Visible = false;
+            rBtn2.Visible = false;
+            rBtn3.Visible = false;
+            rBtn4.Visible = false;
+            rBtn5.Visible = false;
+            rBtn6.Visible = false;
+            rBtn7.Visible = false;
+            rBtn8.Visible = false;
 
         }
 
         private void rBtnCargo_CheckedChanged(object sender, EventArgs e)
         {
-            if(rBtnSideA.Checked==true)
-            {
-                btn1.Text = "cargo";
-            }
-            if (rBtnSideB.Checked == true)
-            {
-                btn2.Text = "cargo";
-            }
-            if (rBtnSideA.Checked == true)
-            {
-                btn3.Text = "cargo";
-            }
-            if(rBtnSideC.Checked==true)
-            {
-                btn4.Text = "cargo";
-            }
-
-            if (rBtnSideB.Checked == true)
-            {
-                btn6.Text = "cargo";
-            }
-
-            if (rBtnSideB.Checked == true)
-            {
-                btn7.Text = "cargo";
-            }
-
-            if (rBtnSideB.Checked == true)
-            {
-                btn8.Text = "cargo";
-            }
-
-
+            groupBox1.Visible = true;
         }
 
         private void rBtnHatch_CheckedChanged(object sender, EventArgs e)
         {
-            if (rBtnSideA.Checked == true)
-            {
-                btn1.Text = "Hatches";
-            }
-            if (rBtnSideB.Checked == true)
-            {
-                btn2.Text = "Hatches";
-            }
-            if (rBtnSideA.Checked == true)
-            {
-                btn3.Text = "Hatches";
-            }
-            if (rBtnSideC.Checked == true)
-            {
-                btn4.Text = "Hatches";
-            }
-
-            if (rBtnSideB.Checked == true)
-            {
-                btn6.Text = "Hatches";
-            }
-
-            if (rBtnSideB.Checked == true)
-            {
-                btn7.Text = "Hatches";
-            }
-
-            if (rBtnSideB.Checked == true)
-            {
-                btn8.Text = "Hatches";
-            }
+            groupBox1.Visible = true;
         }
 
-        private void btnNextPage_Click(object sender, EventArgs e)
+        private void rBtnSideA_CheckedChanged(object sender, EventArgs e)
         {
-            Autonomous form2 = new Autonomous();
-            form2.Show();
-            this.Visible = false;
+            rBtn1.Visible = true;
+            rBtn2.Visible = true;
+            rBtn3.Visible = true;
+            rBtn4.Visible = false;
+            rBtn5.Visible = false;
+            rBtn6.Visible = false;
+            rBtn7.Visible = false;
+            rBtn8.Visible = false;
+
+        }
+
+        private void rBtnSideB_CheckedChanged(object sender, EventArgs e)
+        {
+            rBtn1.Visible = false;
+            rBtn2.Visible = false;
+            rBtn3.Visible = false;
+            rBtn4.Visible = true;
+            rBtn5.Visible = true;
+            rBtn6.Visible = false;
+            rBtn7.Visible = false;
+            rBtn8.Visible = false;
+        }
+
+        private void rBtnSideC_CheckedChanged(object sender, EventArgs e)
+        {
+            rBtn1.Visible = false;
+            rBtn2.Visible = false;
+            rBtn3.Visible = false;
+            rBtn4.Visible = false;
+            rBtn5.Visible = false;
+            rBtn6.Visible = true;
+            rBtn7.Visible = true;
+            rBtn8.Visible = true;
         }
     }
 }

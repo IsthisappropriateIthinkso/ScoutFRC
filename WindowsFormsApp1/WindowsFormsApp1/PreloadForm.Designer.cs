@@ -38,15 +38,15 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.rBtnCargo = new System.Windows.Forms.RadioButton();
             this.rBtnHatch = new System.Windows.Forms.RadioButton();
-            this.btn1 = new System.Windows.Forms.Button();
-            this.btn2 = new System.Windows.Forms.Button();
-            this.btn3 = new System.Windows.Forms.Button();
-            this.btn4 = new System.Windows.Forms.Button();
-            this.btn5 = new System.Windows.Forms.Button();
-            this.btn6 = new System.Windows.Forms.Button();
-            this.btn7 = new System.Windows.Forms.Button();
-            this.btn8 = new System.Windows.Forms.Button();
             this.btnNextPage = new System.Windows.Forms.Button();
+            this.rBtn1 = new System.Windows.Forms.RadioButton();
+            this.rBtn2 = new System.Windows.Forms.RadioButton();
+            this.rBtn3 = new System.Windows.Forms.RadioButton();
+            this.rBtn4 = new System.Windows.Forms.RadioButton();
+            this.rBtn5 = new System.Windows.Forms.RadioButton();
+            this.rBtn6 = new System.Windows.Forms.RadioButton();
+            this.rBtn7 = new System.Windows.Forms.RadioButton();
+            this.rBtn8 = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -61,6 +61,7 @@
             this.rBtnSideA.TabStop = true;
             this.rBtnSideA.Text = "Side A";
             this.rBtnSideA.UseVisualStyleBackColor = true;
+            this.rBtnSideA.CheckedChanged += new System.EventHandler(this.rBtnSideA_CheckedChanged);
             // 
             // rBtnSideB
             // 
@@ -72,6 +73,7 @@
             this.rBtnSideB.TabStop = true;
             this.rBtnSideB.Text = "Side B";
             this.rBtnSideB.UseVisualStyleBackColor = true;
+            this.rBtnSideB.CheckedChanged += new System.EventHandler(this.rBtnSideB_CheckedChanged);
             // 
             // groupBox1
             // 
@@ -94,11 +96,12 @@
             this.rBtnSideC.TabStop = true;
             this.rBtnSideC.Text = "Side C";
             this.rBtnSideC.UseVisualStyleBackColor = true;
+            this.rBtnSideC.CheckedChanged += new System.EventHandler(this.rBtnSideC_CheckedChanged);
             // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(702, 177);
+            this.label1.Location = new System.Drawing.Point(754, 258);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(55, 28);
             this.label1.TabIndex = 3;
@@ -107,7 +110,7 @@
             // label2
             // 
             this.label2.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(738, 352);
+            this.label2.Location = new System.Drawing.Point(604, 300);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(50, 31);
             this.label2.TabIndex = 4;
@@ -116,7 +119,7 @@
             // label3
             // 
             this.label3.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label3.Location = new System.Drawing.Point(618, 300);
+            this.label3.Location = new System.Drawing.Point(751, 332);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(58, 27);
             this.label3.TabIndex = 5;
@@ -141,7 +144,6 @@
             this.rBtnCargo.Name = "rBtnCargo";
             this.rBtnCargo.Size = new System.Drawing.Size(53, 17);
             this.rBtnCargo.TabIndex = 0;
-            this.rBtnCargo.TabStop = true;
             this.rBtnCargo.Text = "Cargo";
             this.rBtnCargo.UseVisualStyleBackColor = true;
             this.rBtnCargo.CheckedChanged += new System.EventHandler(this.rBtnCargo_CheckedChanged);
@@ -153,84 +155,98 @@
             this.rBtnHatch.Name = "rBtnHatch";
             this.rBtnHatch.Size = new System.Drawing.Size(54, 17);
             this.rBtnHatch.TabIndex = 1;
-            this.rBtnHatch.TabStop = true;
             this.rBtnHatch.Text = "Hatch";
             this.rBtnHatch.UseVisualStyleBackColor = true;
             this.rBtnHatch.CheckedChanged += new System.EventHandler(this.rBtnHatch_CheckedChanged);
             // 
-            // btn1
-            // 
-            this.btn1.Location = new System.Drawing.Point(705, 208);
-            this.btn1.Name = "btn1";
-            this.btn1.Size = new System.Drawing.Size(34, 23);
-            this.btn1.TabIndex = 6;
-            this.btn1.UseVisualStyleBackColor = true;
-            // 
-            // btn2
-            // 
-            this.btn2.Location = new System.Drawing.Point(665, 208);
-            this.btn2.Name = "btn2";
-            this.btn2.Size = new System.Drawing.Size(34, 23);
-            this.btn2.TabIndex = 7;
-            this.btn2.UseVisualStyleBackColor = true;
-            // 
-            // btn3
-            // 
-            this.btn3.Location = new System.Drawing.Point(625, 208);
-            this.btn3.Name = "btn3";
-            this.btn3.Size = new System.Drawing.Size(34, 23);
-            this.btn3.TabIndex = 8;
-            this.btn3.UseVisualStyleBackColor = true;
-            // 
-            // btn4
-            // 
-            this.btn4.Location = new System.Drawing.Point(529, 278);
-            this.btn4.Name = "btn4";
-            this.btn4.Size = new System.Drawing.Size(34, 23);
-            this.btn4.TabIndex = 9;
-            this.btn4.UseVisualStyleBackColor = true;
-            // 
-            // btn5
-            // 
-            this.btn5.Location = new System.Drawing.Point(529, 314);
-            this.btn5.Name = "btn5";
-            this.btn5.Size = new System.Drawing.Size(34, 23);
-            this.btn5.TabIndex = 10;
-            this.btn5.UseVisualStyleBackColor = true;
-            // 
-            // btn6
-            // 
-            this.btn6.Location = new System.Drawing.Point(622, 386);
-            this.btn6.Name = "btn6";
-            this.btn6.Size = new System.Drawing.Size(34, 23);
-            this.btn6.TabIndex = 10;
-            this.btn6.UseVisualStyleBackColor = true;
-            // 
-            // btn7
-            // 
-            this.btn7.Location = new System.Drawing.Point(665, 386);
-            this.btn7.Name = "btn7";
-            this.btn7.Size = new System.Drawing.Size(34, 23);
-            this.btn7.TabIndex = 11;
-            this.btn7.UseVisualStyleBackColor = true;
-            // 
-            // btn8
-            // 
-            this.btn8.Location = new System.Drawing.Point(705, 386);
-            this.btn8.Name = "btn8";
-            this.btn8.Size = new System.Drawing.Size(34, 23);
-            this.btn8.TabIndex = 12;
-            this.btn8.UseVisualStyleBackColor = true;
-            // 
             // btnNextPage
             // 
-            this.btnNextPage.Location = new System.Drawing.Point(685, 415);
+            this.btnNextPage.Location = new System.Drawing.Point(98, 415);
             this.btnNextPage.Name = "btnNextPage";
             this.btnNextPage.Size = new System.Drawing.Size(103, 32);
             this.btnNextPage.TabIndex = 13;
             this.btnNextPage.Text = "Next Page";
             this.btnNextPage.UseVisualStyleBackColor = true;
-            this.btnNextPage.Click += new System.EventHandler(this.btnNextPage_Click);
+            // 
+            // rBtn1
+            // 
+            this.rBtn1.AutoSize = true;
+            this.rBtn1.Location = new System.Drawing.Point(711, 213);
+            this.rBtn1.Name = "rBtn1";
+            this.rBtn1.Size = new System.Drawing.Size(14, 13);
+            this.rBtn1.TabIndex = 14;
+            this.rBtn1.TabStop = true;
+            this.rBtn1.UseVisualStyleBackColor = true;
+            // 
+            // rBtn2
+            // 
+            this.rBtn2.AutoSize = true;
+            this.rBtn2.Location = new System.Drawing.Point(675, 212);
+            this.rBtn2.Name = "rBtn2";
+            this.rBtn2.Size = new System.Drawing.Size(14, 13);
+            this.rBtn2.TabIndex = 15;
+            this.rBtn2.TabStop = true;
+            this.rBtn2.UseVisualStyleBackColor = true;
+            // 
+            // rBtn3
+            // 
+            this.rBtn3.AutoSize = true;
+            this.rBtn3.Location = new System.Drawing.Point(640, 213);
+            this.rBtn3.Name = "rBtn3";
+            this.rBtn3.Size = new System.Drawing.Size(14, 13);
+            this.rBtn3.TabIndex = 16;
+            this.rBtn3.TabStop = true;
+            this.rBtn3.UseVisualStyleBackColor = true;
+            // 
+            // rBtn4
+            // 
+            this.rBtn4.AutoSize = true;
+            this.rBtn4.Location = new System.Drawing.Point(532, 282);
+            this.rBtn4.Name = "rBtn4";
+            this.rBtn4.Size = new System.Drawing.Size(14, 13);
+            this.rBtn4.TabIndex = 17;
+            this.rBtn4.TabStop = true;
+            this.rBtn4.UseVisualStyleBackColor = true;
+            // 
+            // rBtn5
+            // 
+            this.rBtn5.AutoSize = true;
+            this.rBtn5.Location = new System.Drawing.Point(531, 320);
+            this.rBtn5.Name = "rBtn5";
+            this.rBtn5.Size = new System.Drawing.Size(14, 13);
+            this.rBtn5.TabIndex = 18;
+            this.rBtn5.TabStop = true;
+            this.rBtn5.UseVisualStyleBackColor = true;
+            // 
+            // rBtn6
+            // 
+            this.rBtn6.AutoSize = true;
+            this.rBtn6.Location = new System.Drawing.Point(640, 386);
+            this.rBtn6.Name = "rBtn6";
+            this.rBtn6.Size = new System.Drawing.Size(14, 13);
+            this.rBtn6.TabIndex = 19;
+            this.rBtn6.TabStop = true;
+            this.rBtn6.UseVisualStyleBackColor = true;
+            // 
+            // rBtn7
+            // 
+            this.rBtn7.AutoSize = true;
+            this.rBtn7.Location = new System.Drawing.Point(675, 386);
+            this.rBtn7.Name = "rBtn7";
+            this.rBtn7.Size = new System.Drawing.Size(14, 13);
+            this.rBtn7.TabIndex = 20;
+            this.rBtn7.TabStop = true;
+            this.rBtn7.UseVisualStyleBackColor = true;
+            // 
+            // rBtn8
+            // 
+            this.rBtn8.AutoSize = true;
+            this.rBtn8.Location = new System.Drawing.Point(711, 386);
+            this.rBtn8.Name = "rBtn8";
+            this.rBtn8.Size = new System.Drawing.Size(14, 13);
+            this.rBtn8.TabIndex = 21;
+            this.rBtn8.TabStop = true;
+            this.rBtn8.UseVisualStyleBackColor = true;
             // 
             // PreloadForm
             // 
@@ -238,15 +254,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.FRC_Field;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.rBtn8);
+            this.Controls.Add(this.rBtn7);
+            this.Controls.Add(this.rBtn6);
+            this.Controls.Add(this.rBtn5);
+            this.Controls.Add(this.rBtn4);
+            this.Controls.Add(this.rBtn3);
+            this.Controls.Add(this.rBtn2);
+            this.Controls.Add(this.rBtn1);
             this.Controls.Add(this.btnNextPage);
-            this.Controls.Add(this.btn8);
-            this.Controls.Add(this.btn7);
-            this.Controls.Add(this.btn6);
-            this.Controls.Add(this.btn5);
-            this.Controls.Add(this.btn4);
-            this.Controls.Add(this.btn3);
-            this.Controls.Add(this.btn2);
-            this.Controls.Add(this.btn1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -254,12 +270,12 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "PreloadForm";
             this.Text = "PreloadForm";
-            this.Load += new System.EventHandler(this.PreloadForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -275,14 +291,14 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.RadioButton rBtnCargo;
         private System.Windows.Forms.RadioButton rBtnHatch;
-        private System.Windows.Forms.Button btn1;
-        private System.Windows.Forms.Button btn2;
-        private System.Windows.Forms.Button btn3;
-        private System.Windows.Forms.Button btn4;
-        private System.Windows.Forms.Button btn5;
-        private System.Windows.Forms.Button btn6;
-        private System.Windows.Forms.Button btn7;
-        private System.Windows.Forms.Button btn8;
         private System.Windows.Forms.Button btnNextPage;
+        private System.Windows.Forms.RadioButton rBtn1;
+        private System.Windows.Forms.RadioButton rBtn2;
+        private System.Windows.Forms.RadioButton rBtn3;
+        private System.Windows.Forms.RadioButton rBtn4;
+        private System.Windows.Forms.RadioButton rBtn5;
+        private System.Windows.Forms.RadioButton rBtn6;
+        private System.Windows.Forms.RadioButton rBtn7;
+        private System.Windows.Forms.RadioButton rBtn8;
     }
 }
