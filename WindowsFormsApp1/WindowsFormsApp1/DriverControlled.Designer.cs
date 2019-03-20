@@ -334,6 +334,7 @@
             this.label10.Size = new System.Drawing.Size(295, 39);
             this.label10.TabIndex = 51;
             this.label10.Text = "Driver Controlled";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // groupBox3
             // 

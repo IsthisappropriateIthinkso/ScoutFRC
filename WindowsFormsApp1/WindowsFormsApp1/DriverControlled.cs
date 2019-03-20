@@ -21,7 +21,7 @@ namespace WindowsFormsApp1
         // values Driver Controlled
         public class valuesDC
         {
-            // All ints below are for the misses
+            // All ints below are for the rocket misses
             public static int sideALow = 0;
             public static int sideAMed = 0;
             public static int sideAHigh = 0;
@@ -42,7 +42,7 @@ namespace WindowsFormsApp1
             public static int cargoMed2 = 0;
             public static int cargoLow2 = 0;
 
-            // Below are for successful
+            // Below are for rocket successes
             public static Boolean sideALowS = false;
             public static Boolean sideAMedS = false;
             public static Boolean sideAHighS = false;
@@ -992,6 +992,11 @@ namespace WindowsFormsApp1
         }
 
         private void gbS2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
         {
 
         }
