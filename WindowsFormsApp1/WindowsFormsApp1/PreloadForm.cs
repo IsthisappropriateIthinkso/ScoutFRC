@@ -98,5 +98,12 @@ namespace WindowsFormsApp1
                 btn8.Text = "Hatches";
             }
         }
+
+        private void btnNextPage_Click(object sender, EventArgs e)
+        {
+            Autonomous form2 = new Autonomous();
+            form2.Show();
+            this.Visible = false;
+        }
     }
 }

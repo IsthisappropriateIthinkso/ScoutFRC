@@ -46,6 +46,7 @@
             this.btn6 = new System.Windows.Forms.Button();
             this.btn7 = new System.Windows.Forms.Button();
             this.btn8 = new System.Windows.Forms.Button();
+            this.btnNextPage = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -221,12 +222,23 @@
             this.btn8.TabIndex = 12;
             this.btn8.UseVisualStyleBackColor = true;
             // 
+            // btnNextPage
+            // 
+            this.btnNextPage.Location = new System.Drawing.Point(685, 415);
+            this.btnNextPage.Name = "btnNextPage";
+            this.btnNextPage.Size = new System.Drawing.Size(103, 32);
+            this.btnNextPage.TabIndex = 13;
+            this.btnNextPage.Text = "Next Page";
+            this.btnNextPage.UseVisualStyleBackColor = true;
+            this.btnNextPage.Click += new System.EventHandler(this.btnNextPage_Click);
+            // 
             // PreloadForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.FRC_Field;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnNextPage);
             this.Controls.Add(this.btn8);
             this.Controls.Add(this.btn7);
             this.Controls.Add(this.btn6);
@@ -271,5 +283,6 @@
         private System.Windows.Forms.Button btn6;
         private System.Windows.Forms.Button btn7;
         private System.Windows.Forms.Button btn8;
+        private System.Windows.Forms.Button btnNextPage;
     }
 }

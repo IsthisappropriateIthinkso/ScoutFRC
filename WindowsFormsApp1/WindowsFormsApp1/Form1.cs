@@ -19,7 +19,7 @@ namespace WindowsFormsApp1
 
         private void BtnContinue_Click(object sender, EventArgs e)
         {
-            Autonomous form2 = new Autonomous();
+            PreloadForm form2 = new PreloadForm();
             form2.Show();
             this.Visible = false;
         }
