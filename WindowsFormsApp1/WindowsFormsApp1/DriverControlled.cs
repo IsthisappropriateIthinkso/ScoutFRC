@@ -17,10 +17,10 @@ namespace WindowsFormsApp1
         public gb()
         {
             InitializeComponent();
-
+            
         }
         // values Driver Controlled
-        public class valuesDC
+        public class value
         {
             // All ints below are for the rocket misses
             public static int sideALow = 0;
@@ -298,6 +298,10 @@ namespace WindowsFormsApp1
             if (rBtnRocket.Checked == true)
             {
                 gbSideTop.Visible = true;
+                label1.Visible = true;
+                label3.Visible = true;
+                label5.Visible = true;
+                label6.Visible = true;
                 groupBox4.Visible = true;
                 groupBox2.Visible = true;
                 gbHeightTop.Visible = true;
@@ -347,7 +351,11 @@ namespace WindowsFormsApp1
             if (rBtnRocket.Checked == true)
             {
                 gbSideTop.Visible = false;
+                label1.Visible = false;
+                label3.Visible = false;
                 groupBox4.Visible = false;
+                label5.Visible = false;
+                label6.Visible = false;
                 gbHeightTop.Visible = true;
                 groupBox2.Visible = true;
                 label2.Visible = true;
@@ -709,7 +717,11 @@ namespace WindowsFormsApp1
         {
             groupBox3.Visible = true;
             gbSideTop.Visible = false;
+            label1.Visible = false;
+            label3.Visible = false;
             groupBox4.Visible = false;
+            label5.Visible = false;
+            label6.Visible = false;
             gbHeightTop.Visible = false;
             groupBox2.Visible = false;
             label2.Visible = false;
@@ -1146,6 +1158,16 @@ namespace WindowsFormsApp1
             {
                 valuesDC.shuttle16 = false;
             }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

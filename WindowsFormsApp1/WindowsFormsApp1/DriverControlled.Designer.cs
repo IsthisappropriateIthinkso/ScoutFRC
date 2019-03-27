@@ -31,16 +31,10 @@
             this.rBtnLow = new System.Windows.Forms.RadioButton();
             this.rBtnMedium = new System.Windows.Forms.RadioButton();
             this.rBtnHigh = new System.Windows.Forms.RadioButton();
-            this.rBtnHighTop = new System.Windows.Forms.RadioButton();
-            this.rBtnMediumTop = new System.Windows.Forms.RadioButton();
-            this.rBtnLowTop = new System.Windows.Forms.RadioButton();
             this.BtnNextScreenDriverStation = new System.Windows.Forms.Button();
-            this.BtnMinus1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.gbHeightTop = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.lblAttempted = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -49,21 +43,7 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.btnAdd1 = new System.Windows.Forms.Button();
-            this.gbSideTop = new System.Windows.Forms.GroupBox();
-            this.btnBTop = new System.Windows.Forms.RadioButton();
-            this.btnATop = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnMinus2 = new System.Windows.Forms.Button();
-            this.btnAdd2 = new System.Windows.Forms.Button();
-            this.lblAttempted2 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.rBtnLowLow = new System.Windows.Forms.RadioButton();
-            this.rBtnMediumLow = new System.Windows.Forms.RadioButton();
-            this.rBtnHighLow = new System.Windows.Forms.RadioButton();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.btnBLow = new System.Windows.Forms.RadioButton();
-            this.btnALow = new System.Windows.Forms.RadioButton();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.rBtnRocket = new System.Windows.Forms.RadioButton();
             this.rBtnShuttle = new System.Windows.Forms.RadioButton();
@@ -124,12 +104,10 @@
             this.cBoxShuttle13 = new System.Windows.Forms.CheckBox();
             this.cBoxShuttle9 = new System.Windows.Forms.CheckBox();
             this.cBoxShuttle16 = new System.Windows.Forms.CheckBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
-            this.gbHeightTop.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            this.gbSideTop.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox7.SuspendLayout();
@@ -180,45 +158,6 @@
             this.rBtnHigh.UseVisualStyleBackColor = true;
             this.rBtnHigh.CheckedChanged += new System.EventHandler(this.rBtnHigh_CheckedChanged);
             // 
-            // rBtnHighTop
-            // 
-            this.rBtnHighTop.AutoSize = true;
-            this.rBtnHighTop.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rBtnHighTop.Location = new System.Drawing.Point(6, 10);
-            this.rBtnHighTop.Name = "rBtnHighTop";
-            this.rBtnHighTop.Size = new System.Drawing.Size(54, 20);
-            this.rBtnHighTop.TabIndex = 18;
-            this.rBtnHighTop.TabStop = true;
-            this.rBtnHighTop.Text = "High";
-            this.rBtnHighTop.UseVisualStyleBackColor = true;
-            this.rBtnHighTop.CheckedChanged += new System.EventHandler(this.rBtnHighTop_CheckedChanged);
-            // 
-            // rBtnMediumTop
-            // 
-            this.rBtnMediumTop.AutoSize = true;
-            this.rBtnMediumTop.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rBtnMediumTop.Location = new System.Drawing.Point(6, 33);
-            this.rBtnMediumTop.Name = "rBtnMediumTop";
-            this.rBtnMediumTop.Size = new System.Drawing.Size(74, 20);
-            this.rBtnMediumTop.TabIndex = 17;
-            this.rBtnMediumTop.TabStop = true;
-            this.rBtnMediumTop.Text = "Medium";
-            this.rBtnMediumTop.UseVisualStyleBackColor = true;
-            this.rBtnMediumTop.CheckedChanged += new System.EventHandler(this.rBtnMediumTop_CheckedChanged);
-            // 
-            // rBtnLowTop
-            // 
-            this.rBtnLowTop.AutoSize = true;
-            this.rBtnLowTop.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rBtnLowTop.Location = new System.Drawing.Point(6, 56);
-            this.rBtnLowTop.Name = "rBtnLowTop";
-            this.rBtnLowTop.Size = new System.Drawing.Size(50, 20);
-            this.rBtnLowTop.TabIndex = 16;
-            this.rBtnLowTop.TabStop = true;
-            this.rBtnLowTop.Text = "Low";
-            this.rBtnLowTop.UseVisualStyleBackColor = true;
-            this.rBtnLowTop.CheckedChanged += new System.EventHandler(this.rBtnLowTop_CheckedChanged);
-            // 
             // BtnNextScreenDriverStation
             // 
             this.BtnNextScreenDriverStation.Location = new System.Drawing.Point(725, 575);
@@ -228,19 +167,6 @@
             this.BtnNextScreenDriverStation.Text = "Next Screen";
             this.BtnNextScreenDriverStation.UseVisualStyleBackColor = true;
             this.BtnNextScreenDriverStation.Click += new System.EventHandler(this.BtnNextScreenDriverStation_Click);
-            // 
-            // BtnMinus1
-            // 
-            this.BtnMinus1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnMinus1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnMinus1.Location = new System.Drawing.Point(561, 201);
-            this.BtnMinus1.Name = "BtnMinus1";
-            this.BtnMinus1.Size = new System.Drawing.Size(36, 36);
-            this.BtnMinus1.TabIndex = 32;
-            this.BtnMinus1.Text = "<";
-            this.BtnMinus1.UseVisualStyleBackColor = true;
-            this.BtnMinus1.Visible = false;
-            this.BtnMinus1.Click += new System.EventHandler(this.BtnMinus_1_Click);
             // 
             // groupBox1
             // 
@@ -253,19 +179,6 @@
             this.groupBox1.TabIndex = 34;
             this.groupBox1.TabStop = false;
             // 
-            // gbHeightTop
-            // 
-            this.gbHeightTop.BackColor = System.Drawing.SystemColors.Control;
-            this.gbHeightTop.Controls.Add(this.rBtnHighTop);
-            this.gbHeightTop.Controls.Add(this.rBtnLowTop);
-            this.gbHeightTop.Controls.Add(this.rBtnMediumTop);
-            this.gbHeightTop.Location = new System.Drawing.Point(454, 141);
-            this.gbHeightTop.Name = "gbHeightTop";
-            this.gbHeightTop.Size = new System.Drawing.Size(85, 87);
-            this.gbHeightTop.TabIndex = 35;
-            this.gbHeightTop.TabStop = false;
-            this.gbHeightTop.Visible = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -274,6 +187,7 @@
             this.label1.Size = new System.Drawing.Size(14, 13);
             this.label1.TabIndex = 37;
             this.label1.Text = "A";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label3
             // 
@@ -283,17 +197,6 @@
             this.label3.Size = new System.Drawing.Size(14, 13);
             this.label3.TabIndex = 39;
             this.label3.Text = "B";
-            // 
-            // lblAttempted
-            // 
-            this.lblAttempted.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAttempted.Location = new System.Drawing.Point(561, 160);
-            this.lblAttempted.Name = "lblAttempted";
-            this.lblAttempted.Size = new System.Drawing.Size(79, 38);
-            this.lblAttempted.TabIndex = 40;
-            this.lblAttempted.Text = "0";
-            this.lblAttempted.Visible = false;
-            this.lblAttempted.Click += new System.EventHandler(this.lblAttempted_Click);
             // 
             // label5
             // 
@@ -383,193 +286,18 @@
             this.radioButton1.UseVisualStyleBackColor = true;
             this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged_1);
             // 
-            // btnAdd1
-            // 
-            this.btnAdd1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAdd1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd1.Location = new System.Drawing.Point(604, 201);
-            this.btnAdd1.Name = "btnAdd1";
-            this.btnAdd1.Size = new System.Drawing.Size(36, 36);
-            this.btnAdd1.TabIndex = 54;
-            this.btnAdd1.Text = ">";
-            this.btnAdd1.UseVisualStyleBackColor = true;
-            this.btnAdd1.Visible = false;
-            this.btnAdd1.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // gbSideTop
-            // 
-            this.gbSideTop.BackColor = System.Drawing.SystemColors.Control;
-            this.gbSideTop.Controls.Add(this.btnBTop);
-            this.gbSideTop.Controls.Add(this.btnATop);
-            this.gbSideTop.Location = new System.Drawing.Point(370, 151);
-            this.gbSideTop.Name = "gbSideTop";
-            this.gbSideTop.Size = new System.Drawing.Size(77, 66);
-            this.gbSideTop.TabIndex = 35;
-            this.gbSideTop.TabStop = false;
-            this.gbSideTop.Visible = false;
-            // 
-            // btnBTop
-            // 
-            this.btnBTop.AutoSize = true;
-            this.btnBTop.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBTop.Location = new System.Drawing.Point(5, 37);
-            this.btnBTop.Name = "btnBTop";
-            this.btnBTop.Size = new System.Drawing.Size(66, 20);
-            this.btnBTop.TabIndex = 1;
-            this.btnBTop.TabStop = true;
-            this.btnBTop.Text = "B Side";
-            this.btnBTop.UseVisualStyleBackColor = true;
-            this.btnBTop.CheckedChanged += new System.EventHandler(this.btnBTop_CheckedChanged);
-            // 
-            // btnATop
-            // 
-            this.btnATop.AutoSize = true;
-            this.btnATop.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnATop.Location = new System.Drawing.Point(5, 10);
-            this.btnATop.Name = "btnATop";
-            this.btnATop.Size = new System.Drawing.Size(66, 20);
-            this.btnATop.TabIndex = 0;
-            this.btnATop.TabStop = true;
-            this.btnATop.Text = "A Side";
-            this.btnATop.UseVisualStyleBackColor = true;
-            this.btnATop.CheckedChanged += new System.EventHandler(this.radioButton5_CheckedChanged);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Maroon;
-            this.label2.Location = new System.Drawing.Point(566, 133);
+            this.label2.Location = new System.Drawing.Point(428, 148);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 24);
             this.label2.TabIndex = 55;
             this.label2.Text = "Misses";
             this.label2.Visible = false;
-            // 
-            // btnMinus2
-            // 
-            this.btnMinus2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMinus2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMinus2.Location = new System.Drawing.Point(553, 446);
-            this.btnMinus2.Name = "btnMinus2";
-            this.btnMinus2.Size = new System.Drawing.Size(36, 36);
-            this.btnMinus2.TabIndex = 56;
-            this.btnMinus2.Text = "<";
-            this.btnMinus2.UseVisualStyleBackColor = true;
-            this.btnMinus2.Visible = false;
-            this.btnMinus2.Click += new System.EventHandler(this.btnMinus2_Click);
-            // 
-            // btnAdd2
-            // 
-            this.btnAdd2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAdd2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd2.Location = new System.Drawing.Point(595, 446);
-            this.btnAdd2.Name = "btnAdd2";
-            this.btnAdd2.Size = new System.Drawing.Size(36, 36);
-            this.btnAdd2.TabIndex = 57;
-            this.btnAdd2.Text = ">";
-            this.btnAdd2.UseVisualStyleBackColor = true;
-            this.btnAdd2.Visible = false;
-            this.btnAdd2.Click += new System.EventHandler(this.button2_Click_1);
-            // 
-            // lblAttempted2
-            // 
-            this.lblAttempted2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAttempted2.Location = new System.Drawing.Point(552, 405);
-            this.lblAttempted2.Name = "lblAttempted2";
-            this.lblAttempted2.Size = new System.Drawing.Size(79, 38);
-            this.lblAttempted2.TabIndex = 58;
-            this.lblAttempted2.Text = "0";
-            this.lblAttempted2.Visible = false;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.rBtnLowLow);
-            this.groupBox2.Controls.Add(this.rBtnMediumLow);
-            this.groupBox2.Controls.Add(this.rBtnHighLow);
-            this.groupBox2.Location = new System.Drawing.Point(453, 377);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(85, 87);
-            this.groupBox2.TabIndex = 36;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Visible = false;
-            // 
-            // rBtnLowLow
-            // 
-            this.rBtnLowLow.AutoSize = true;
-            this.rBtnLowLow.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rBtnLowLow.Location = new System.Drawing.Point(5, 61);
-            this.rBtnLowLow.Name = "rBtnLowLow";
-            this.rBtnLowLow.Size = new System.Drawing.Size(50, 20);
-            this.rBtnLowLow.TabIndex = 16;
-            this.rBtnLowLow.TabStop = true;
-            this.rBtnLowLow.Text = "Low";
-            this.rBtnLowLow.UseVisualStyleBackColor = true;
-            this.rBtnLowLow.CheckedChanged += new System.EventHandler(this.rBtnLowLow_CheckedChanged);
-            // 
-            // rBtnMediumLow
-            // 
-            this.rBtnMediumLow.AutoSize = true;
-            this.rBtnMediumLow.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rBtnMediumLow.Location = new System.Drawing.Point(5, 36);
-            this.rBtnMediumLow.Name = "rBtnMediumLow";
-            this.rBtnMediumLow.Size = new System.Drawing.Size(74, 20);
-            this.rBtnMediumLow.TabIndex = 17;
-            this.rBtnMediumLow.TabStop = true;
-            this.rBtnMediumLow.Text = "Medium";
-            this.rBtnMediumLow.UseVisualStyleBackColor = true;
-            this.rBtnMediumLow.CheckedChanged += new System.EventHandler(this.rBtnMediumLow_CheckedChanged);
-            // 
-            // rBtnHighLow
-            // 
-            this.rBtnHighLow.AutoSize = true;
-            this.rBtnHighLow.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rBtnHighLow.Location = new System.Drawing.Point(5, 10);
-            this.rBtnHighLow.Name = "rBtnHighLow";
-            this.rBtnHighLow.Size = new System.Drawing.Size(54, 20);
-            this.rBtnHighLow.TabIndex = 18;
-            this.rBtnHighLow.TabStop = true;
-            this.rBtnHighLow.Text = "High";
-            this.rBtnHighLow.UseVisualStyleBackColor = true;
-            this.rBtnHighLow.CheckedChanged += new System.EventHandler(this.rBtnHighLow_CheckedChanged);
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.btnBLow);
-            this.groupBox4.Controls.Add(this.btnALow);
-            this.groupBox4.Location = new System.Drawing.Point(370, 403);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(77, 46);
-            this.groupBox4.TabIndex = 36;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Visible = false;
-            // 
-            // btnBLow
-            // 
-            this.btnBLow.AutoSize = true;
-            this.btnBLow.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBLow.Location = new System.Drawing.Point(5, 26);
-            this.btnBLow.Name = "btnBLow";
-            this.btnBLow.Size = new System.Drawing.Size(66, 20);
-            this.btnBLow.TabIndex = 1;
-            this.btnBLow.TabStop = true;
-            this.btnBLow.Text = "B Side";
-            this.btnBLow.UseVisualStyleBackColor = true;
-            this.btnBLow.CheckedChanged += new System.EventHandler(this.btnBLow_CheckedChanged);
-            // 
-            // btnALow
-            // 
-            this.btnALow.AutoSize = true;
-            this.btnALow.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnALow.Location = new System.Drawing.Point(5, 0);
-            this.btnALow.Name = "btnALow";
-            this.btnALow.Size = new System.Drawing.Size(66, 20);
-            this.btnALow.TabIndex = 0;
-            this.btnALow.TabStop = true;
-            this.btnALow.Text = "A Side";
-            this.btnALow.UseVisualStyleBackColor = true;
-            this.btnALow.CheckedChanged += new System.EventHandler(this.btnALow_CheckedChanged);
             // 
             // groupBox5
             // 
@@ -873,7 +601,7 @@
             this.label4.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Maroon;
-            this.label4.Location = new System.Drawing.Point(557, 377);
+            this.label4.Location = new System.Drawing.Point(428, 387);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(68, 24);
             this.label4.TabIndex = 69;
@@ -1273,6 +1001,22 @@
             this.cBoxShuttle16.Visible = false;
             this.cBoxShuttle16.CheckedChanged += new System.EventHandler(this.cBoxShuttle16_CheckedChanged);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(405, 180);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 87;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(405, 421);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 21);
+            this.comboBox2.TabIndex = 88;
+            // 
             // gb
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1280,6 +1024,8 @@
             this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.FRC_Field;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(800, 618);
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.cBoxShuttle16);
             this.Controls.Add(this.cBoxShuttle9);
             this.Controls.Add(this.cBoxShuttle13);
@@ -1304,41 +1050,23 @@
             this.Controls.Add(this.gbS);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.groupBox5);
-            this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.lblAttempted2);
-            this.Controls.Add(this.btnAdd2);
-            this.Controls.Add(this.btnMinus2);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.gbSideTop);
-            this.Controls.Add(this.btnAdd1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.lblAttempted);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.BtnMinus1);
             this.Controls.Add(this.BtnNextScreenDriverStation);
-            this.Controls.Add(this.gbHeightTop);
             this.Name = "gb";
             this.Text = "DriverControlled";
             this.Load += new System.EventHandler(this.DriverControlled_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.gbHeightTop.ResumeLayout(false);
-            this.gbHeightTop.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            this.gbSideTop.ResumeLayout(false);
-            this.gbSideTop.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.groupBox6.ResumeLayout(false);
@@ -1371,16 +1099,10 @@
         private System.Windows.Forms.RadioButton rBtnLow;
         private System.Windows.Forms.RadioButton rBtnMedium;
         private System.Windows.Forms.RadioButton rBtnHigh;
-        private System.Windows.Forms.RadioButton rBtnHighTop;
-        private System.Windows.Forms.RadioButton rBtnMediumTop;
-        private System.Windows.Forms.RadioButton rBtnLowTop;
         private System.Windows.Forms.Button BtnNextScreenDriverStation;
-        private System.Windows.Forms.Button BtnMinus1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox gbHeightTop;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label lblAttempted;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label8;
@@ -1389,21 +1111,7 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.Button btnAdd1;
-        private System.Windows.Forms.GroupBox gbSideTop;
-        private System.Windows.Forms.RadioButton btnBTop;
-        private System.Windows.Forms.RadioButton btnATop;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnMinus2;
-        private System.Windows.Forms.Button btnAdd2;
-        private System.Windows.Forms.Label lblAttempted2;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.RadioButton rBtnLowLow;
-        private System.Windows.Forms.RadioButton rBtnMediumLow;
-        private System.Windows.Forms.RadioButton rBtnHighLow;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.RadioButton btnBLow;
-        private System.Windows.Forms.RadioButton btnALow;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.RadioButton rBtnRocket;
         private System.Windows.Forms.RadioButton rBtnShuttle;
@@ -1464,5 +1172,7 @@
         private System.Windows.Forms.CheckBox cBoxShuttle13;
         private System.Windows.Forms.CheckBox cBoxShuttle9;
         private System.Windows.Forms.CheckBox cBoxShuttle16;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox2;
     }
 }
