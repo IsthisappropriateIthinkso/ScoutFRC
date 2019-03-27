@@ -63,6 +63,24 @@ namespace WindowsFormsApp1
             public static int cargoHighS2 = 0;
             public static int cargoMedS2 = 0;
             public static int cargoLowS2 = 0;
+
+            // Completed for Shuttle
+            public static Boolean shuttle1;
+            public static Boolean shuttle2;
+            public static Boolean shuttle3;
+            public static Boolean shuttle4;
+            public static Boolean shuttle5;
+            public static Boolean shuttle6;
+            public static Boolean shuttle7;
+            public static Boolean shuttle8;
+            public static Boolean shuttle9;
+            public static Boolean shuttle10;
+            public static Boolean shuttle11;
+            public static Boolean shuttle12;
+            public static Boolean shuttle13;
+            public static Boolean shuttle14;
+            public static Boolean shuttle15;
+            public static Boolean shuttle16;
         }
 
         private void DriverControlled_Load(object sender, EventArgs e)
@@ -312,6 +330,14 @@ namespace WindowsFormsApp1
                 cBoxShuttle7.Visible = true;
                 cBoxShuttle8.Visible = true;
             }
+            cBoxShuttle10.Visible = false;
+            cBoxShuttle11.Visible = false;
+            cBoxShuttle12.Visible = false;
+            cBoxShuttle13.Visible = false;
+            cBoxShuttle9.Visible = false;
+            cBoxShuttle14.Visible = false;
+            cBoxShuttle15.Visible = false;
+            cBoxShuttle16.Visible = false;
         }
 
 
@@ -368,6 +394,15 @@ namespace WindowsFormsApp1
                 cBoxShuttle6.Visible = false;
                 cBoxShuttle7.Visible = false;
                 cBoxShuttle8.Visible = false;
+                cBoxShuttle9.Visible = true;
+                cBoxShuttle10.Visible = true;
+                cBoxShuttle11.Visible = true;
+                cBoxShuttle12.Visible = true;
+                cBoxShuttle13.Visible = true;
+                cBoxShuttle14.Visible = true;
+                cBoxShuttle15.Visible = true;
+                cBoxShuttle16.Visible = true;
+
             }
         }
 
@@ -659,10 +694,20 @@ namespace WindowsFormsApp1
             cBoxShuttle6.Visible = false;
             cBoxShuttle7.Visible = false;
             cBoxShuttle8.Visible = false;
+            cBoxShuttle9.Visible = false;
+            cBoxShuttle10.Visible = false;
+            cBoxShuttle11.Visible = false;
+            cBoxShuttle12.Visible = false;
+            cBoxShuttle13.Visible = false;
+            cBoxShuttle14.Visible = false;
+            cBoxShuttle15.Visible = false;
+            cBoxShuttle16.Visible = false;
+            groupBox3.Visible = true;
         }
 
         private void rBtnShuttle_CheckedChanged(object sender, EventArgs e)
         {
+            groupBox3.Visible = true;
             gbSideTop.Visible = false;
             groupBox4.Visible = false;
             gbHeightTop.Visible = false;
@@ -1000,6 +1045,107 @@ namespace WindowsFormsApp1
         private void label10_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void cBoxShuttle9_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cBoxShuttle10.Checked == true)
+            {
+                valuesDC.shuttle10 = true;
+            }
+            else if (cBoxShuttle10.Checked == false)
+            {
+                valuesDC.shuttle10 = false;
+            }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cBoxShuttle9_CheckedChanged_1(object sender, EventArgs e)
+        {
+            if (cBoxShuttle9.Checked == true)
+            {
+                valuesDC.shuttle9 = true;
+            }
+            else if (cBoxShuttle9.Checked == false)
+            {
+                valuesDC.shuttle9 = false;
+            }
+        }
+
+        private void cBoxShuttle11_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cBoxShuttle11.Checked == true)
+            {
+                valuesDC.shuttle11 = true;
+            }
+            else if (cBoxShuttle11.Checked == false)
+            {
+                valuesDC.shuttle11 = false;
+            }
+        }
+
+        private void cBoxShuttle12_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cBoxShuttle9.Checked == true)
+            {
+                valuesDC.shuttle12 = true;
+            }
+            else if (cBoxShuttle12.Checked == false)
+            {
+                valuesDC.shuttle12 = false;
+            }
+        }
+
+        private void cBoxShuttle13_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cBoxShuttle13.Checked == true)
+            {
+                valuesDC.shuttle13 = true;
+            }
+            else if (cBoxShuttle13.Checked == false)
+            {
+                valuesDC.shuttle13 = false;
+            }
+        }
+
+        private void cBoxShuttle14_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cBoxShuttle14.Checked == true)
+            {
+                valuesDC.shuttle14 = true;
+            }
+            else if (cBoxShuttle14.Checked == false)
+            {
+                valuesDC.shuttle14 = false;
+            }
+        }
+
+        private void cBoxShuttle15_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cBoxShuttle15.Checked == true)
+            {
+                valuesDC.shuttle15 = true;
+            }
+            else if (cBoxShuttle15.Checked == false)
+            {
+                valuesDC.shuttle15 = false;
+            }
+        }
+
+        private void cBoxShuttle16_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cBoxShuttle16.Checked == true)
+            {
+                valuesDC.shuttle16 = true;
+            }
+            else if (cBoxShuttle16.Checked == false)
+            {
+                valuesDC.shuttle16 = false;
+            }
         }
     }
 }

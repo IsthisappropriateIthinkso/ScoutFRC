@@ -77,5 +77,12 @@ namespace WindowsFormsApp1
             rBtn7.Visible = true;
             rBtn8.Visible = true;
         }
+
+        private void btnNextPage_Click(object sender, EventArgs e)
+        {
+            Autonomous form3 = new Autonomous();
+            this.Close();
+            form3.Show();
+        }
     }
 }

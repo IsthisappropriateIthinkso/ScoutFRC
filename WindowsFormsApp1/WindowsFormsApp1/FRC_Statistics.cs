@@ -72,16 +72,16 @@ namespace WindowsFormsApp1
             int totalCargoMissed = WindowsFormsApp1.gb.valuesDC.cargoHigh + WindowsFormsApp1.gb.valuesDC.cargoMed + WindowsFormsApp1.gb.valuesDC.cargoLow;
             int totalCargoMissed2 = WindowsFormsApp1.gb.valuesDC.cargoHigh2 + WindowsFormsApp1.gb.valuesDC.cargoMed2 + WindowsFormsApp1.gb.valuesDC.cargoLow2;
             int totalHatchesMissed = WindowsFormsApp1.gb.valuesDC.sideALow + WindowsFormsApp1.gb.valuesDC.sideAMed + WindowsFormsApp1.gb.valuesDC.sideAHigh + WindowsFormsApp1.gb.valuesDC.sideBLow + WindowsFormsApp1.gb.valuesDC.sideBMed + WindowsFormsApp1.gb.valuesDC.sideBHigh;
-            int totalHatchesMissed2 = 0;
+            int totalHatchesMissed2 = WindowsFormsApp1.gb.valuesDC.sideALow2 + WindowsFormsApp1.gb.valuesDC.sideAMed2 + WindowsFormsApp1.gb.valuesDC.sideAHigh2 + WindowsFormsApp1.gb.valuesDC.sideBLow2 + WindowsFormsApp1.gb.valuesDC.sideBMed2 + WindowsFormsApp1.gb.valuesDC.sideBHigh2;
             int totalCargo = WindowsFormsApp1.gb.valuesDC.cargoHighS + WindowsFormsApp1.gb.valuesDC.cargoMedS + WindowsFormsApp1.gb.valuesDC.cargoLowS;
             int totalCargo2 = WindowsFormsApp1.gb.valuesDC.cargoHighS2 + WindowsFormsApp1.gb.valuesDC.cargoMedS2 + WindowsFormsApp1.gb.valuesDC.cargoLowS2;
 
             lblCargoTotal.Text = "Cargo: " + totalCargo + "       Misses: " + totalCargoMissed;
             lblHatchesTotal.Text = "Hatches: " + totalHatches + "       Misses: " + totalHatchesMissed;
             lblCargoTotal2.Text = "Cargo: " + totalCargo2 + "       Misses: " + totalCargoMissed2;
-            lblHatchesTotal2.Text = "Hatches: " + totalHatches2;
+            lblHatchesTotal2.Text = "Hatches: " + totalHatches2 + "       Misses: " + totalHatchesMissed2;
 
-            
+
         }
 
         private void BtnNextMatch_Click(object sender, EventArgs e)
@@ -105,5 +105,7 @@ namespace WindowsFormsApp1
         {
 
         }
+
+
     }
 }

@@ -167,6 +167,7 @@
             this.btnNextPage.TabIndex = 13;
             this.btnNextPage.Text = "Next Page";
             this.btnNextPage.UseVisualStyleBackColor = true;
+            this.btnNextPage.Click += new System.EventHandler(this.btnNextPage_Click);
             // 
             // rBtn1
             // 
